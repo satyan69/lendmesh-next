@@ -1,0 +1,11 @@
+@use "./../../scss/variable.scss";
+.footer {
+  background-color: #4296ea;
+}
+.footer-logo {
+  height: 250px;
+  background-image: url("../../app/assets/img/logo_footer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
