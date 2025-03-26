@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "./../../app/assets/img/logo.svg";
+import menuData from "./menuData";
 import "./Header.scss";
 export default function Header() {
   return (
@@ -7,147 +9,62 @@ export default function Header() {
       <nav className="w-full px-6 bg-gradient-to-r from-[#002244] to-[#003366]">
         <div className="container mx-auto flex justify-between items-center">
           {/* <!-- Logo --> */}
-          <a href="/" className="flex items-center space-x-2 py-4">
+          <Link href="/" className="flex items-center space-x-2 py-4">
             <Image
               className="dark:invert"
               src={logo}
-              alt="Next.js logo"
+              alt="lendmesh logo"
               width={180}
               height={38}
               priority
             />
-          </a>
+          </Link>
 
           {/* <!-- Desktop Navigation Links --> */}
           <ul className="hidden md:flex space-x-1 lg:space-x-8 text-white">
-            <li>
-              <a
-                href="#"
-                className="inline-flex py-6 px-1 lg:px-2 hover:text-green-400 transition items-center nav-item active"
-              >
-                About Us
-              </a>
-            </li>
-            {/* <!-- Loan Menu with Submenu --> */}
-            <li className="relative group">
-              <a
-                href="#"
-                className="py-6 px-2 hover:text-green-400 transition inline-flex w-full justify-center gap-x-1.5 items-center"
-              >
-                Loans
-                <svg
-                  className="-mr-1 size-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
+            {/* <!-- Menu with Submenu --> */}
+            {menuData &&
+              menuData.map((menuItem) => (
+                <li
+                  className={menuItem.submenu ? "relative group" : ""}
+                  key={menuItem.id}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-              <div className="absolute hidden group-hover:block bg-white text-black rounded-lg shadow-md w-48 top-full left-0 space-y-2 py-2">
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Personal Loans
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Vehicle Loans
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Student Loans
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Mortgage Loans
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Home Equity Loans
-                </a>
-              </div>
-            </li>
-            {/* <!-- Calculator Menu with Submenu --> */}
-            <li className="relative group">
-              <a
-                href="#"
-                className="py-6 px-2 hover:text-green-400 transition inline-flex w-full justify-center gap-x-1.5 items-center"
-              >
-                Calculator
-                <svg
-                  className="-mr-1 size-5 text-gray-400"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  data-slot="icon"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </a>
-              <div className="absolute hidden group-hover:block bg-white text-black rounded-lg shadow-md w-48 top-full left-0 space-y-2 py-2">
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Loan Calculator
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Mortgage Calculator
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
-                >
-                  Interest Calculator
-                </a>
-              </div>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="inline-flex py-6 px-2 hover:text-green-400 transition"
-              >
-                Blogs
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="inline-flex py-6 px-2 hover:text-green-400 transition"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="inline-flex py-6 px-2 hover:text-green-400 transition"
-              >
-                Community
-              </a>
-            </li>
+                  <Link
+                    href={menuItem.path ? menuItem.path : "#"}
+                    className="py-6 px-2 hover:text-green-400 transition inline-flex w-full justify-center gap-x-1.5 items-center"
+                  >
+                    {menuItem.title}
+                    {menuItem.submenu && (
+                      <svg
+                        className="-mr-1 size-5 text-gray-400"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                        data-slot="icon"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    )}
+                  </Link>
+
+                  <div className="absolute hidden group-hover:block bg-white text-black rounded-lg shadow-md w-48 top-full left-0 space-y-2 py-2">
+                    {menuItem?.submenu &&
+                      menuItem?.submenu.map((subMenuItem) => (
+                        <Link
+                          href={subMenuItem.path ? subMenuItem.path : "#"}
+                          className="block px-4 py-2 hover:bg-blue-500 hover:text-white"
+                          key={subMenuItem.id}
+                        >
+                          {subMenuItem.title}
+                        </Link>
+                      ))}
+                  </div>
+                </li>
+              ))}
           </ul>
 
           {/* <!-- Sign Up Button for Desktop --> */}
