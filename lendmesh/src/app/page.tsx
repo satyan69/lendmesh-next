@@ -291,7 +291,7 @@ export default function Home() {
           {/* <!-- Blog 1 --> */}
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition border border-gray-200">
             <Image
-              className="dark:invert"
+              className="w-full object-cover"
               src={blog1}
               alt="Credit Card Loan"
               priority
@@ -318,7 +318,7 @@ export default function Home() {
           {/* <!-- Blog 2 --> */}
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition border border-gray-200">
             <Image
-              className="dark:invert"
+              className="w-full object-cover"
               src={blog2}
               alt="Credit Card Loan"
               priority
@@ -345,7 +345,7 @@ export default function Home() {
           {/* <!-- Blog 3 --> */}
           <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition border border-gray-200">
             <Image
-              className="dark:invert"
+              className="w-full object-cover"
               src={blog3}
               alt="Credit Card Loan"
               priority
