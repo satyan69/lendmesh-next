@@ -1,4 +1,11 @@
 @use "./../../scss/variable.scss";
+.lm-join-now {
+  background-image: url("../../app/assets/img/join_now_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-height: 500px;
+}
 .footer {
   background-color: #4296ea;
 }

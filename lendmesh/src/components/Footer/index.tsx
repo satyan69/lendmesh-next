@@ -6,11 +6,39 @@ import instagram from "./../../app/assets/img/icons/instagram_icon.svg";
 export default function Footer() {
   return (
     <>
+    {/*
+       **
+       **
+       **/}
+      {/* Join Our Community */}
+      <div className="relative bg-cover bg-center h-screen lm-join-now">
+        {/* <!-- Overlay --> */}
+        {/* <div className="absolute inset-0 bg-black bg-opacity-60"></div> */}
+
+        {/* <!-- Content --> */}
+        <div className="relative flex flex-col items-center justify-center h-full text-center text-white px-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+            Join Our Community
+          </h1>
+
+          <p className="text-lg md:text-xl mb-8 max-w-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.
+          </p>
+
+          <a
+            href="#"
+            className="bg-green-400 hover:bg-green-500 text-black font-semibold py-3 px-8 rounded-lg shadow-lg transition"
+          >
+            Join now
+          </a>
+        </div>
+      </div>
       <footer className="bg-blue-500 text-white py-12 px-6 footer">
         <div className="container mx-auto grid md:grid-cols-2 gap-12">
           {/* <!-- Left Section: Text Block --> */}
           <div className="space-y-4">
-            <p className="text-lg font-medium">
+            <p className="text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
@@ -71,27 +99,27 @@ export default function Footer() {
               <h3 className="font-bold text-xl">Loans</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Personal Loans
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Vehicle Loans
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Student Loans
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Mortgage Loans
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Home Equity Loans
                   </a>
                 </li>
@@ -103,22 +131,22 @@ export default function Footer() {
               <h3 className="font-bold text-xl">Discover</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     About us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Blogs
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Calculator
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     FAQ's
                   </a>
                 </li>
@@ -130,17 +158,17 @@ export default function Footer() {
               <h3 className="font-bold text-xl">Security & Protection</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Terms & Conditions
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-blue-300 transition">
+                  <a href="#" className="hover:text-[#6BE3A2] transition">
                     Student
                   </a>
                 </li>
