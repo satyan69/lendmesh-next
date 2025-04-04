@@ -7,3 +7,62 @@
 .bg-light-blue {
   background-color: rgba(66, 150, 235, 0.06);
 }
+
+.loans-banner {
+  background-image: url("./../../assets/img/loans/loans_banner_frame.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  height: 50vh;
+}
+
+select {
+  appearance: none; /* Remove default browser styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  padding-right: 20px; /* Add padding to the right */
+}
+
+/* Optional: Add a wrapper to control the layout */
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  select {
+    width: 100%;
+    padding: 8px;
+    background-image: url("./../../assets/img/icons/down_arrow.png");
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Adjust position as needed */
+  }
+}
+@media screen and (max-width: 1024px) {
+  .loans-table-wrapper-parent {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      height: 6px; /* Adjust thickness */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent; /* Makes the track invisible */
+      margin-top: -2px; /* Move scrollbar up */
+      margin-bottom: -2px; /* Adjust bottom */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #4285f4; /* Blue color */
+      border-radius: 10px; /* Rounded edges */
+    }
+
+    /* Optional: Hover effect */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #1a73e8; /* Darker shade when hovered */
+    }
+  }
+  .loans-table-wrapper {
+    min-width: 1024px;
+    overflow-x: auto;
+  }
+}
+body {
+  overflow-x: hidden;
+}

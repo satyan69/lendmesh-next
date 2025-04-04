@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"], // Include the required font weights
+  weight: ["300", "400", "500", "600", "700", "900"], // Include the required font weights
   display: "swap", // Font display option
 });
 

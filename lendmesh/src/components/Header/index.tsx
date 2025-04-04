@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <header className="fixed z-10 w-full">
-      <nav className="w-full sm:px-3 px-6 bg-gradient-to-r from-[#002244] to-[#003366]">
+      <nav className="w-full sm:px-3 px-6 bg-gradient-to-r">
         <div className="lg:container md:mx-auto md:mx-0 w-full md:max-w-full flex justify-between items-center">
           {/* <!-- Logo --> */}
           <Link

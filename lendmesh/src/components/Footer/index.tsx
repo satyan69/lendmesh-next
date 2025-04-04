@@ -6,7 +6,7 @@ import instagram from "./../../app/assets/img/icons/instagram_icon.svg";
 export default function Footer() {
   return (
     <>
-    {/*
+      {/*
        **
        **
        **/}
@@ -38,11 +38,30 @@ export default function Footer() {
         <div className="container mx-auto grid md:grid-cols-2 gap-12">
           {/* <!-- Left Section: Text Block --> */}
           <div className="space-y-4">
-            <p className="text-lg">
+            {/* <p className="text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
-            </p>
+            </p> */}
+            <div className="text-white p-4 flex flex-col items-center sm:items-start space-y-3 w-full max-w-sm mx-auto">
+              <p className="text-lg font-semibold text-center sm:text-left">
+                Sign up for daily updates
+              </p>
+              <div className="flex flex-col sm:flex-row sm:space-x-2 w-full">
+                <input
+                  type="email"
+                  placeholder="Email Id"
+                  className="border border-white bg-transparent px-4 py-2 rounded-md text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white w-full"
+                />
+                <button
+                  type="button"
+                  className="bg-white text-blue-500 px-5 py-2 rounded-md font-semibold hover:bg-gray-100 mt-2 sm:mt-0 w-full sm:w-auto"
+                >
+                  Sign up
+                </button>
+              </div>
+            </div>
+
             <div className="flex items-center justify-start space-x-8">
               <div className="flex items-center">
                 <a

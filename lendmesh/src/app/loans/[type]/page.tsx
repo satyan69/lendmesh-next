@@ -74,9 +74,9 @@ export default async function LoansPage({
     <>
       <div>
         {/* Banner Section */}
-        <section className="bg-[#002144] text-white text-center py-16 px-6">
-          <h1 className="text-4xl font-bold">Personal Loan</h1>
-          <p className="mt-4 max-w-2xl mx-auto">
+        <section className="flex flex-col items-center justify-center bg-[#002144] text-white text-center py-16 px-6 loans-banner">
+          <h1 className="mt-6 text-4xl sm:text-5xl font-bold">Personal Loan</h1>
+          <p className="mt-8 text-l sm:text-xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore.
           </p>
@@ -87,16 +87,14 @@ export default async function LoansPage({
           <h2 className="text-lg font-semibold mb-4">Filters</h2>
           <div className="flex flex-wrap gap-4">
             <div className="flex-1 min-w-[150px]">
-              <label className="block text-sm font-medium text-gray-700">
-                Zip code
-              </label>
+              <label className="block text-sm font-semibold">Zip code</label>
               <input
                 type="text"
                 className="mt-1 p-2 border rounded-md w-full"
               />
             </div>
-            <div className="flex-1 min-w-[150px]">
-              <label className="block text-sm font-medium text-gray-700">
+            <div className="flex-1 min-w-[150px] select-wrapper">
+              <label className="block text-sm font-semibold">
                 Credit score
               </label>
               <select className="mt-1 p-2 border rounded-md w-full">
@@ -105,20 +103,16 @@ export default async function LoansPage({
                 <option>700+</option>
               </select>
             </div>
-            <div className="flex-1 min-w-[150px]">
-              <label className="block text-sm font-medium text-gray-700">
-                Sort by
-              </label>
+            <div className="flex-1 min-w-[150px] select-wrapper">
+              <label className="block text-sm font-semibold">Sort by</label>
               <select className="mt-1 p-2 border rounded-md w-full">
                 <option>Select</option>
                 <option>APR</option>
                 <option>Term</option>
               </select>
             </div>
-            <div className="flex-1 min-w-[150px]">
-              <label className="block text-sm font-medium text-gray-700">
-                Sort type
-              </label>
+            <div className="flex-1 min-w-[150px] select-wrapper">
+              <label className="block text-sm font-semibold">Sort type</label>
               <select className="mt-1 p-2 border rounded-md w-full">
                 <option>Select</option>
                 <option>Ascending</option>
@@ -130,9 +124,9 @@ export default async function LoansPage({
             </button>
           </div>
         </div>
-
-        <div className="bg-white rounded-lg shadow-md p-6">
-          {/* Filters Section */}
+        {/* Table */}
+        <div className="loans-table-wrapper-parent">
+        <div className="bg-white rounded-lg px-6 pt-6 pb-2 loans-table-wrapper">
           <div className="w-full">
             {/* Header */}
             <div className="flex font-semibold bg-[#6BE3A2] text-[#002144] py-3 px-4 rounded-tl-[8px] rounded-tr-[8px]">
@@ -147,7 +141,7 @@ export default async function LoansPage({
             </div>
 
             {/* Rows */}
-            <div className="border-b border-gray px-4 py-3 flex items-center text-sm">
+            <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
               <div className="w-[25%] pr-2">University Credit Union 1</div>
               <div className="w-[15%] pr-2">10.23% - 18%</div>
               <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
@@ -168,7 +162,7 @@ export default async function LoansPage({
               </div>
             </div>
 
-            <div className="px-4 py-3 flex items-center text-sm">
+            <div className="px-4 py-3 flex items-center text-sm font-medium">
               <div className="w-[25%] pr-2">University Credit Union 2</div>
               <div className="w-[15%] pr-2">10.23% - 18%</div>
               <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
@@ -199,7 +193,7 @@ export default async function LoansPage({
                 <div className="w-[15%] pr-2">Link</div>
               </div>
 
-              <div className="px-5 bg-light-blue rounded-bl-[8px] rounded-br-[8px]">
+              <div className="px-5 bg-light-blue rounded-bl-[8px] rounded-br-[8px] font-medium">
                 <div className="flex text-sm border-b border-gray py-3">
                   <div className="w-[25%] pr-2">Personal Loan</div>
                   <div className="w-[15%] pr-2">10.23% - 18%</div>
@@ -207,7 +201,7 @@ export default async function LoansPage({
                   <div className="w-[20%] pr-2">$25,000</div>
                   <div className="w-[15%] pr-2">∞</div>
                 </div>
-                <div className="flex text-sm border-b border-gray py-3">
+                <div className="flex text-sm border-b border-gray py-3 font-medium">
                   <div className="w-[25%] pr-2">Personal Loan</div>
                   <div className="w-[15%] pr-2">10.23% - 18%</div>
                   <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
@@ -226,7 +220,7 @@ export default async function LoansPage({
           </div>
 
           {/* Additional Rows */}
-          <div className="border-b border-gray px-4 py-3 flex items-center text-sm">
+          <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
             <div className="w-[25%] pr-2">University Credit Union 1</div>
             <div className="w-[15%] pr-2">10.23% - 18%</div>
             <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
@@ -247,7 +241,7 @@ export default async function LoansPage({
             </div>
           </div>
           {/* Last columns should not have border */}
-          <div className="px-4 py-3 flex items-center text-sm">
+          <div className="px-4 py-3 flex items-center text-sm font-medium">
             <div className="w-[25%] pr-2">University Credit Union 1</div>
             <div className="w-[15%] pr-2">10.23% - 18%</div>
             <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
@@ -305,6 +299,8 @@ export default async function LoansPage({
             </button>
           </div>
         </div>
+        </div>
+        <p className="py-2"></p>
       </div>
     </>
   );
