@@ -43,7 +43,7 @@ export default function Footer() {
               eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
             </p> */}
-            <div className="text-white p-4 flex flex-col items-center sm:items-start space-y-3 w-full max-w-sm mx-auto">
+            <div className="text-white p-4 flex flex-col items-center sm:items-start space-y-3 w-full max-w-sm">
               <p className="text-lg font-semibold text-center sm:text-left">
                 Sign up for daily updates
               </p>

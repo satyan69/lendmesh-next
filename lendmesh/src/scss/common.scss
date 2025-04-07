@@ -2,3 +2,20 @@ button {
   font-weight: 600;
   white-space: nowrap;
 }
+
+.page-banner {
+  background-color: #002144;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 50vh;
+  min-height: 300px;
+  max-height: 800px;
+  @media screen and (max-width: 1024px) {
+    height: 40vh;
+  }
+  @media screen and (max-width: 600px) {
+    height: 35vh;
+    min-height: 300px;
+  }
+}

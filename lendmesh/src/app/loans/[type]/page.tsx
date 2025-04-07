@@ -72,75 +72,161 @@ export default async function LoansPage({
   }
   return (
     <>
-      <div>
-        {/* Banner Section */}
-        <section className="flex flex-col items-center justify-center bg-[#002144] text-white text-center py-16 px-6 loans-banner">
+      {/* Banner Section */}
+      <div className="bg-[#002144] page-banner loans-banner">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
           <h1 className="mt-6 text-4xl sm:text-5xl font-bold">Personal Loan</h1>
           <p className="mt-8 text-l sm:text-xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore.
           </p>
         </section>
+      </div>
 
-        {/* Main Content Section */}
-        <div className="bg-white rounded-lg shadow-md p-6 mb-4">
-          <h2 className="text-lg font-semibold mb-4">Filters</h2>
-          <div className="flex flex-wrap gap-4">
-            <div className="flex-1 min-w-[150px]">
-              <label className="block text-sm font-semibold">Zip code</label>
-              <input
-                type="text"
-                className="mt-1 p-2 border rounded-md w-full"
-              />
+      {/* Main Content Section */}
+      <div className="loans-section-1-wrapper">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16">
+          <div className="bg-white rounded-lg shadow-md p-6 mb-4">
+            <h2 className="text-lg font-semibold mb-4">Filters</h2>
+            <div className="flex flex-wrap gap-4">
+              <div className="flex-1 min-w-[150px]">
+                <label className="block text-sm font-semibold">Zip code</label>
+                <input
+                  type="text"
+                  className="mt-1 p-2 border rounded-md w-full"
+                />
+              </div>
+              <div className="flex-1 min-w-[150px] select-wrapper">
+                <label className="block text-sm font-semibold">
+                  Credit score
+                </label>
+                <select className="mt-1 p-2 border rounded-md w-full">
+                  <option>Select</option>
+                  <option>600+</option>
+                  <option>700+</option>
+                </select>
+              </div>
+              <div className="flex-1 min-w-[150px] select-wrapper">
+                <label className="block text-sm font-semibold">Sort by</label>
+                <select className="mt-1 p-2 border rounded-md w-full">
+                  <option>Select</option>
+                  <option>APR</option>
+                  <option>Term</option>
+                </select>
+              </div>
+              <div className="flex-1 min-w-[150px] select-wrapper">
+                <label className="block text-sm font-semibold">Sort type</label>
+                <select className="mt-1 p-2 border rounded-md w-full">
+                  <option>Select</option>
+                  <option>Ascending</option>
+                  <option>Descending</option>
+                </select>
+              </div>
+              <button type="button" className="bg-[#2F435F] hover:bg-[#2F435F] text-white font-bold py-2 px-4 rounded self-end cursor-pointer">
+                Apply
+              </button>
             </div>
-            <div className="flex-1 min-w-[150px] select-wrapper">
-              <label className="block text-sm font-semibold">
-                Credit score
-              </label>
-              <select className="mt-1 p-2 border rounded-md w-full">
-                <option>Select</option>
-                <option>600+</option>
-                <option>700+</option>
-              </select>
-            </div>
-            <div className="flex-1 min-w-[150px] select-wrapper">
-              <label className="block text-sm font-semibold">Sort by</label>
-              <select className="mt-1 p-2 border rounded-md w-full">
-                <option>Select</option>
-                <option>APR</option>
-                <option>Term</option>
-              </select>
-            </div>
-            <div className="flex-1 min-w-[150px] select-wrapper">
-              <label className="block text-sm font-semibold">Sort type</label>
-              <select className="mt-1 p-2 border rounded-md w-full">
-                <option>Select</option>
-                <option>Ascending</option>
-                <option>Descending</option>
-              </select>
-            </div>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded self-end">
-              Apply
-            </button>
           </div>
-        </div>
-        {/* Table */}
-        <div className="loans-table-wrapper-parent">
-        <div className="bg-white rounded-lg px-6 pt-6 pb-2 loans-table-wrapper">
-          <div className="w-full">
-            {/* Header */}
-            <div className="flex font-semibold bg-[#6BE3A2] text-[#002144] py-3 px-4 rounded-tl-[8px] rounded-tr-[8px]">
-              <div className="w-[25%] pr-2">Lending Partner</div>
-              <div className="w-[15%] pr-2">APR</div>
-              <div className="w-[20%] pr-2">Term</div>
-              <div className="w-[20%] pr-2">Amount</div>
-              <div className="w-[15%] pr-2">Link</div>
-              <div className="w-[5%] flex justify-center items-center">
-                Info
+        </section>
+      </div>
+
+      {/* Table */}
+      <div className="loans-section-2-wrapper loans-table-wrapper-parent">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <div className="bg-white rounded-lg pt-6 pb-2 loans-table-wrapper">
+            <div className="w-full">
+              {/* Header */}
+              <div className="flex font-semibold bg-[#6BE3A2] text-[#002144] py-3 px-4 rounded-tl-[8px] rounded-tr-[8px]">
+                <div className="w-[25%] pr-2">Lending Partner</div>
+                <div className="w-[15%] pr-2">APR</div>
+                <div className="w-[20%] pr-2">Term</div>
+                <div className="w-[20%] pr-2">Amount</div>
+                <div className="w-[15%] pr-2">Link</div>
+                <div className="w-[5%] flex justify-center items-center">
+                  Info
+                </div>
+              </div>
+
+              {/* Rows */}
+              <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
+                <div className="w-[25%] pr-2">University Credit Union 1</div>
+                <div className="w-[15%] pr-2">10.23% - 18%</div>
+                <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
+                <div className="w-[20%] pr-2">$25,000</div>
+                <div className="w-[15%] pr-2">∞</div>
+                <div className="w-[5%] flex justify-center items-center cursor-pointer">
+                  <svg
+                    className="size-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="px-4 py-3 flex items-center text-sm font-medium">
+                <div className="w-[25%] pr-2">University Credit Union 2</div>
+                <div className="w-[15%] pr-2">10.23% - 18%</div>
+                <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
+                <div className="w-[20%] pr-2">$25,000</div>
+                <div className="w-[15%] pr-2">∞</div>
+                <div className="w-[5%] flex justify-center items-center cursor-pointer">
+                  <svg
+                    className="size-5 text-gray-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              {/* Second Table Section */}
+              <div>
+                <div className="flex font-semibold text-sm bg-medium-blue border-gray py-3 px-5 rounded-tl-[8px] rounded-tr-[8px]">
+                  <div className="w-[25%] pr-2">Program Name</div>
+                  <div className="w-[15%] pr-2">APR</div>
+                  <div className="w-[20%] pr-2">Term</div>
+                  <div className="w-[20%] pr-2">Amount</div>
+                  <div className="w-[15%] pr-2">Link</div>
+                </div>
+
+                <div className="px-5 bg-light-blue rounded-bl-[8px] rounded-br-[8px] font-medium">
+                  <div className="flex text-sm border-b border-gray py-3">
+                    <div className="w-[25%] pr-2">Personal Loan</div>
+                    <div className="w-[15%] pr-2">10.23% - 18%</div>
+                    <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
+                    <div className="w-[20%] pr-2">$25,000</div>
+                    <div className="w-[15%] pr-2">∞</div>
+                  </div>
+                  <div className="flex text-sm border-b border-gray py-3 font-medium">
+                    <div className="w-[25%] pr-2">Personal Loan</div>
+                    <div className="w-[15%] pr-2">10.23% - 18%</div>
+                    <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
+                    <div className="w-[20%] pr-2">$25,000</div>
+                    <div className="w-[15%] pr-2">∞</div>
+                  </div>
+                  <p className="py-4 px-2 text-sm">
+                    <strong className="mb-2">Note:</strong>
+                    <span className="block pt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore.
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
 
-            {/* Rows */}
+            {/* Additional Rows */}
             <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
               <div className="w-[25%] pr-2">University Credit Union 1</div>
               <div className="w-[15%] pr-2">10.23% - 18%</div>
@@ -161,9 +247,9 @@ export default async function LoansPage({
                 </svg>
               </div>
             </div>
-
+            {/* Last columns should not have border */}
             <div className="px-4 py-3 flex items-center text-sm font-medium">
-              <div className="w-[25%] pr-2">University Credit Union 2</div>
+              <div className="w-[25%] pr-2">University Credit Union 1</div>
               <div className="w-[15%] pr-2">10.23% - 18%</div>
               <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
               <div className="w-[20%] pr-2">$25,000</div>
@@ -183,125 +269,46 @@ export default async function LoansPage({
               </div>
             </div>
 
-            {/* Second Table Section */}
-            <div>
-              <div className="flex font-semibold text-sm bg-medium-blue border-gray py-3 px-5 rounded-tl-[8px] rounded-tr-[8px]">
-                <div className="w-[25%] pr-2">Program Name</div>
-                <div className="w-[15%] pr-2">APR</div>
-                <div className="w-[20%] pr-2">Term</div>
-                <div className="w-[20%] pr-2">Amount</div>
-                <div className="w-[15%] pr-2">Link</div>
-              </div>
-
-              <div className="px-5 bg-light-blue rounded-bl-[8px] rounded-br-[8px] font-medium">
-                <div className="flex text-sm border-b border-gray py-3">
-                  <div className="w-[25%] pr-2">Personal Loan</div>
-                  <div className="w-[15%] pr-2">10.23% - 18%</div>
-                  <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
-                  <div className="w-[20%] pr-2">$25,000</div>
-                  <div className="w-[15%] pr-2">∞</div>
-                </div>
-                <div className="flex text-sm border-b border-gray py-3 font-medium">
-                  <div className="w-[25%] pr-2">Personal Loan</div>
-                  <div className="w-[15%] pr-2">10.23% - 18%</div>
-                  <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
-                  <div className="w-[20%] pr-2">$25,000</div>
-                  <div className="w-[15%] pr-2">∞</div>
-                </div>
-                <p className="py-4 px-2 text-sm">
-                  <strong className="mb-2">Note:</strong>
-                  <span className="block pt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </span>
-                </p>
-              </div>
+            {/* Pagination */}
+            <div className="flex justify-center items-center mt-6">
+              <button
+                type="button"
+                className="bg-[#F4F9FE] hover:bg-[#6BE3A2] rounded-full px-2 py-2 cursor-pointer"
+              >
+                <svg
+                  className="size-8 transform rotate-90"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+              <span className="text-sm px-5">Page 1 of 5</span>
+              <button
+                type="button"
+                className="bg-[#F4F9FE] hover:bg-[#6BE3A2] text-xl rounded-full px-2 py-2 cursor-pointer"
+              >
+                <svg
+                  className="size-8 transform -rotate-90"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
-
-          {/* Additional Rows */}
-          <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
-            <div className="w-[25%] pr-2">University Credit Union 1</div>
-            <div className="w-[15%] pr-2">10.23% - 18%</div>
-            <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
-            <div className="w-[20%] pr-2">$25,000</div>
-            <div className="w-[15%] pr-2">∞</div>
-            <div className="w-[5%] flex justify-center items-center cursor-pointer">
-              <svg
-                className="size-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-          {/* Last columns should not have border */}
-          <div className="px-4 py-3 flex items-center text-sm font-medium">
-            <div className="w-[25%] pr-2">University Credit Union 1</div>
-            <div className="w-[15%] pr-2">10.23% - 18%</div>
-            <div className="w-[20%] pr-2">2.1yrs - 7yrs</div>
-            <div className="w-[20%] pr-2">$25,000</div>
-            <div className="w-[15%] pr-2">∞</div>
-            <div className="w-[5%] flex justify-center items-center cursor-pointer">
-              <svg
-                className="size-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </div>
-
-          {/* Pagination */}
-          <div className="flex justify-center items-center mt-6">
-            <button
-              type="button"
-              className="bg-[#F4F9FE] hover:bg-[#6BE3A2] rounded-full px-2 py-2 cursor-pointer"
-            >
-              <svg
-                className="size-8 transform rotate-90"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-            <span className="text-sm px-5">Page 1 of 5</span>
-            <button
-              type="button"
-              className="bg-[#F4F9FE] hover:bg-[#6BE3A2] text-xl rounded-full px-2 py-2 cursor-pointer"
-            >
-              <svg
-                className="size-8 transform -rotate-90"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        </div>
-        <p className="py-2"></p>
+        </section>
       </div>
+      <p className="py-2"></p>
     </>
   );
 }
