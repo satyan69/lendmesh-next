@@ -81,12 +81,12 @@ export default function Header() {
 
           {/* <!-- Sign Up Button for Desktop --> */}
           <div className="hidden md:block">
-            <a
-              href="#"
-              className="bg-blue-500 text-white px-6 py-2 sm:px-4 sm:py-1 rounded-lg shadow-lg hover:bg-blue-600 transition whitespace-nowrap"
+            <button
+              type="button"
+              className="bg-[#6BE3A2] text-white px-6 sm:px-3 py-1 sm:py-1 md:py-2 xs:text-xs text-sm rounded-lg shadow-lg hover:bg-blue-600 transition whitespace-nowrap"
             >
               Sign Up
-            </a>
+            </button>
           </div>
 
           {/* <!-- Hamburger Button for Mobile --> */}

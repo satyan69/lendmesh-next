@@ -1,3 +1,31 @@
+.home-banner {
+  background-image: url("./assets/img/home/home_banner_lg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  @media screen and (max-width: 1024px) {
+    // height: 40vh;
+  }
+  @media (max-width: 768px) {
+    // height: 25vh;
+    // min-height: 200px;
+  }
+  @media screen and (max-width: 600px) {
+    // height: 35vh;
+    // min-height: 300px;
+  }
+}
+.home-about-lendmesh {
+  background-image: url("./assets/img/home/home_section_1_lg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  @media (max-width: 768px) {
+    height: 25vh;
+    min-height: 200px;
+  }
+}
+
 .home_affordability,
 .mortgage_calculator {
   color: #002144;

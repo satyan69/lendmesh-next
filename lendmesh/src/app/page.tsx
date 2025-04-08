@@ -22,103 +22,125 @@ export default function Home() {
        **/}
       {/* About Lendmesh */}
       {/* TODO - BG - from-blue-900 to-blue-700*/}
-      <div className="bg-gradient-to-b from-blue-900 to-blue-700 text-white py-16 px-6">
-        {/* <!-- Heading --> */}
-        <h2 className="text-4xl font-bold text-center mt-12 mb-12">
-          Our Offerings
-        </h2>
+      <div className="bg-gradient-to-b from-blue-900 to-blue-700 text-white py-16 px-6 home-banner">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* <!-- Personal Loan --> */}
+            <div className="flex flex-col items-start py-8">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 pt-30 leading-normal">
+                Find the Right Loan, Effortlessly with LendMesh
+              </h2>
+              <p className="text-gray-100 hover:text-white mb-5 text-xl">
+                LendMesh makes it simple, transparent and absolutely free,
+                helping you compare the best loan offers from top credit unions
+                and lenders across the USA
+              </p>
+              <button className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[4px] font-semibold hover:bg-white hover:text-blue-900 transition">
+                Get started
+              </button>
+            </div>
 
-        {/* <!-- Container --> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-          {/* <!-- Personal Loan --> */}
-          <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-            <Image
-              className="dark:invert"
-              src={personalLoan}
-              alt="Personal Loan"
-              priority
-            />
-            <h3 className="text-2xl font-bold mb-4">Personal Loan</h3>
-            <p className="text-gray-100 hover:text-white">
-              Whether it's home improvements, debt consolidation, or unexpected
-              expenses, we connect you with affordable personal loan options
-              with no hidden fees.
-            </p>
+            {/* <!-- Vehicle Loan --> */}
+            <div className="flex flex-col items-center text-center p-8"></div>
           </div>
 
-          {/* <!-- Vehicle Loan --> */}
-          <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-            <Image
-              className="dark:invert"
-              src={vehicleLoan}
-              alt="Vehicle Loan"
-              priority
-            />
-            <h3 className="text-2xl font-bold mb-4">Vehicle Loan</h3>
-            <p className="text-gray-100 hover:text-white">
-              New, used, or refinancing, we find you the best auto loan rates
-              from trusted lenders, so you can save more.
-            </p>
-          </div>
+          {/* <!-- Heading --> */}
+          <h2 className="text-3xl lg:text-4xl font-bold text-center mt-30 mb-12">
+            Our Offerings
+          </h2>
 
-          {/* <!-- Student Loan --> */}
-          <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-            <Image
-              className="dark:invert"
-              src={studentLoan}
-              alt="Student Loan"
-              priority
-            />
-            <h3 className="text-2xl font-bold mb-4">Student Loan</h3>
-            <p className="text-gray-100 hover:text-white">
-              Find the best student loan options for college or refinancing,
-              with lower rates and flexible repayment plans.
-            </p>
-          </div>
+          {/* <!-- Container --> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
+            {/* <!-- Personal Loan --> */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+              <Image
+                className="dark:invert"
+                src={personalLoan}
+                alt="Personal Loan"
+                priority
+              />
+              <h3 className="text-2xl font-bold mb-4">Personal Loan</h3>
+              <p className="text-gray-100 hover:text-white">
+                Whether it's home improvements, debt consolidation, or
+                unexpected expenses, we connect you with affordable personal
+                loan options with no hidden fees.
+              </p>
+            </div>
 
-          {/* <!-- Mortgage Loan --> */}
-          <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-            <Image
-              className="dark:invert"
-              src={mortagageLoan}
-              alt="Mortagage Loan"
-              priority
-            />
-            <h3 className="text-2xl font-bold mb-4">Mortgage Loan</h3>
-            <p className="text-gray-100 hover:text-white">
-              Whether you're a first-time homebuyer or refinancing, we help you
-              find the lowest mortgage rates from top lenders.
-            </p>
-          </div>
+            {/* <!-- Vehicle Loan --> */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+              <Image
+                className="dark:invert"
+                src={vehicleLoan}
+                alt="Vehicle Loan"
+                priority
+              />
+              <h3 className="text-2xl font-bold mb-4">Vehicle Loan</h3>
+              <p className="text-gray-100 hover:text-white">
+                New, used, or refinancing, we find you the best auto loan rates
+                from trusted lenders, so you can save more.
+              </p>
+            </div>
 
-          {/* <!-- Home Equity Loan --> */}
-          <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-            <Image
-              className="dark:invert"
-              src={homeEquityLoan}
-              alt="Home Equity Loan"
-              priority
-            />
-            <h3 className="text-2xl font-bold mb-4">Home Equity Loan</h3>
-            <p className="text-gray-100 hover:text-white">
-              Access funds for major expenses or investments with low-rate home
-              equity loans and HELOCs.
-            </p>
-          </div>
+            {/* <!-- Student Loan --> */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+              <Image
+                className="dark:invert"
+                src={studentLoan}
+                alt="Student Loan"
+                priority
+              />
+              <h3 className="text-2xl font-bold mb-4">Student Loan</h3>
+              <p className="text-gray-100 hover:text-white">
+                Find the best student loan options for college or refinancing,
+                with lower rates and flexible repayment plans.
+              </p>
+            </div>
 
-          {/* <!-- Credit Card Loan --> */}
-          <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-103 transition">
-            <Image
-              className="dark:invert"
-              src={creditCardLoan}
-              alt="Credit Card Loan"
-              priority
-            />
-            <h3 className="text-2xl font-bold mb-4">Credit Card Loan</h3>
-            <p className="text-gray-100 hover:text-white">
-              Enjoy flexible credit options with competitive rates, perfect for
-              your everyday expenses.
-            </p>
+            {/* <!-- Mortgage Loan --> */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+              <Image
+                className="dark:invert"
+                src={mortagageLoan}
+                alt="Mortagage Loan"
+                priority
+              />
+              <h3 className="text-2xl font-bold mb-4">Mortgage Loan</h3>
+              <p className="text-gray-100 hover:text-white">
+                Whether you're a first-time homebuyer or refinancing, we help
+                you find the lowest mortgage rates from top lenders.
+              </p>
+            </div>
+
+            {/* <!-- Home Equity Loan --> */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+              <Image
+                className="dark:invert"
+                src={homeEquityLoan}
+                alt="Home Equity Loan"
+                priority
+              />
+              <h3 className="text-2xl font-bold mb-4">Home Equity Loan</h3>
+              <p className="text-gray-100 hover:text-white">
+                Access funds for major expenses or investments with low-rate
+                home equity loans and HELOCs.
+              </p>
+            </div>
+
+            {/* <!-- Credit Card Loan --> */}
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-103 transition">
+              <Image
+                className="dark:invert"
+                src={creditCardLoan}
+                alt="Credit Card Loan"
+                priority
+              />
+              <h3 className="text-2xl font-bold mb-4">Credit Card Loan</h3>
+              <p className="text-gray-100 hover:text-white">
+                Enjoy flexible credit options with competitive rates, perfect
+                for your everyday expenses.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +151,7 @@ export default function Home() {
        **/}
       {/* About Lendmesh */}
 
-      <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center">
+      <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center home-about-lendmesh">
         {/* <!-- Title Section --> */}
         <h2 className="text-4xl font-bold">About Lendmesh</h2>
 
@@ -162,7 +184,10 @@ export default function Home() {
 
         {/* <!-- Button Section --> */}
         <div className="mt-10">
-          <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
+          <button
+            typeof="button"
+            className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+          >
             Know more
           </button>
         </div>
@@ -176,9 +201,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* <!-- Card 1 --> */}
           <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-            <h3 className="text-2xl font-bold">
-              All inquires are free
-            </h3>
+            <h3 className="text-2xl font-bold">All inquires are free</h3>
             <p className="mt-4 leading-relaxed">
               No obligations, no charge - that's the Lendmesh way. We strive to
               match homebuyers with top lenders, and you take it from there.
@@ -187,9 +210,7 @@ export default function Home() {
 
           {/* <!-- Card 2 --> */}
           <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-            <h3 className="text-2xl font-bold">
-              Will Not Affect Your Credit
-            </h3>
+            <h3 className="text-2xl font-bold">Will Not Affect Your Credit</h3>
             <p className="mt-4 leading-relaxed">
               You worked hard to build your credit score, we'll work hard to
               protect it. Your mortgage inquiry here on our platform will not
@@ -283,9 +304,7 @@ export default function Home() {
        **/}
       {/* Blogs */}
       <div className="bg-gray-50 py-16 px-4 md:px-10 lg:px-20">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Blogs
-        </h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Blogs</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 blogs">
           {/* <!-- Blog 1 --> */}
@@ -393,7 +412,10 @@ export default function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut.
             </p>
-            <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
+            <button
+              typeof="button"
+              className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+            >
               More info
             </button>
           </div>

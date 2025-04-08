@@ -25,7 +25,7 @@ const AboutPage = () => {
       </div>
       <div className="loans-section-1-wrapper">
         <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16">
-          <div className="bg-white rounded-lg shadow-md p-6 mb-4">
+          <div className="bg-white rounded-lg px-6 py-6 lg:px-10 mb-4">
             <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center">
               {/* <!-- Title Section --> */}
               <h2 className="text-4xl font-bold">About Lendmesh</h2>
@@ -58,18 +58,18 @@ const AboutPage = () => {
               </div>
 
               {/* <!-- Button Section --> */}
-              <div className="mt-10">
-                <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
+              {/* <div className="mt-10">
+                <button typeof="button" className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
                   Know more
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="bg-white py-16">
+          <div className="bg-white py-16 px-5 text-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* <!-- Card 1 --> */}
               <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
@@ -109,28 +109,30 @@ const AboutPage = () => {
           {/*  */}
           {/*  */}
           {/*  */}
-          <div className="border-2 border-blue-400 flex rounded overflow-hidden shadow-md my-16">
-            {/* <!-- Left dark section (can be an image or solid color) --> */}
-            <div className="w-1/3 bg-[#001B45]">
-              {/* <!-- Optional: Add image here --> */}
-            </div>
+          <div className="px-5">
+            <div className="border-2 border-blue-400 flex rounded overflow-hidden shadow-md my-16">
+              {/* <!-- Left dark section (can be an image or solid color) --> */}
+              <div className="w-1/3 bg-[#001B45]">
+                {/* <!-- Optional: Add image here --> */}
+              </div>
 
-            <div className="w-2/3 p-6 bg-white">
-              <h2 className="text-2xl font-bold text-[#001B45]">
-                Jithendra Mane
-              </h2>
-              <p className="text-blue-500 text-sm mb-4">Founder</p>
-              <p className="text-gray-700 text-sm mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore
-              </p>
-              <div className="flex gap-4 mt-4">
-                <div className="w-5 h-5 bg-gray-200 rounded-full"></div>
-                <div className="w-5 h-5 bg-gray-200 rounded-full"></div>
-                <div className="w-5 h-5 bg-gray-200 rounded-full"></div>
+              <div className="w-2/3 p-6 bg-white">
+                <h2 className="text-2xl font-bold text-[#001B45]">
+                  Jithendra Mane
+                </h2>
+                <p className="text-blue-500 text-sm mb-4">Founder</p>
+                <p className="text-gray-700 text-sm mb-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore.
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore
+                </p>
+                <div className="flex gap-4 mt-4">
+                  <div className="w-10 h-10 bg-gray-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-gray-200 rounded-full"></div>
+                  <div className="w-10 h-10 bg-gray-200 rounded-full"></div>
+                </div>
               </div>
             </div>
           </div>
