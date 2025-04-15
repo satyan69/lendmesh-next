@@ -4,10 +4,11 @@ import Link from "next/link";
 import logo from "./../../app/assets/img/logo.svg";
 import menuData from "./menuData";
 import "./Header.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   // Mobile Menu
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [loanOpen, setLoanOpen] = useState(false);
   const [calculatorOpen, setCalculatorOpen] = useState(false);
@@ -15,9 +16,22 @@ export default function Header() {
     setIsOpen((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="fixed z-10 w-full">
-      <nav className="w-full sm:px-3 px-6 bg-gradient-to-r">
+      <nav
+        className={`w-full sm:px-3 px-6 transition-colors duration-300 ease-in-out ${
+          isScrolled ? 'bg-[#4296EA] shadow-md' : 'bg-transparent'
+        }`}
+      >
         <div className="lg:container md:mx-auto md:mx-0 w-full md:max-w-full flex justify-between items-center">
           {/* <!-- Logo --> */}
           <Link
@@ -48,7 +62,7 @@ export default function Header() {
                     {menuItem.title}
                     {menuItem.submenu && (
                       <svg
-                        className="-mr-1 size-5 text-gray-400"
+                        className="-mr-1 size-5"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                         aria-hidden="true"
@@ -151,7 +165,7 @@ export default function Header() {
               Loans
               <span className="float-right">
                 <svg
-                  className="-mr-1 size-5 text-gray-400"
+                  className="-mr-1 size-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -205,7 +219,7 @@ export default function Header() {
               Calculator
               <span className="float-right">
                 <svg
-                  className="-mr-1 size-5 text-gray-400"
+                  className="-mr-1 size-5"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
