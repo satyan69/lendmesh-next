@@ -1,0 +1,331 @@
+{
+    "vehicle_loans": {
+      "filter_data": [
+        {
+          "name": "Zip Code",
+          "key": "zip_code",
+          "type": "input",
+          "value": "12345"
+        },
+        {
+          "name": "Credit Score",
+          "key": "credit_score",
+          "type": "select",
+                  "value": [
+            { "name": "780", "key": 780 },
+            { "name": "750", "key": 750 },
+            { "name": "720", "key": 720 },
+            { "name": "680", "key": 680 },
+            { "name": "620", "key": 620 }
+          ]
+        },
+        {
+          "name": "Sort By",
+          "key": "sort_by",
+          "type": "select",
+          "value": [{ "name": "APR", "key": "apr" }]
+        },
+        {
+          "name": "Sort Type",
+          "key": "sort_type",
+          "type": "select",
+          "value": [{ "name": "Ascending", "key": "asc" }, { "name": "Descending", "key": "desc" }]
+        }
+      ],
+      "column_mappings": [
+        {
+          "name": "Lending Partner",
+          "key": "lender_id",
+          "unit": ""
+        },
+        {
+          "name": "APR",
+          "keys": ["overall_min_apr", "overall_max_apr"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Term",
+          "keys": ["overall_min_terms", "overall_max_terms"],
+          "delimiter": " - ",
+          "unit": "Yrs"
+        },
+        {
+          "name": "Link",
+          "key": "url",
+          "unit": ""
+        }
+      ]
+    },
+    "mortgage_loans": {
+      "filter_data": [
+        {
+          "name": "Zip Code",
+          "key": "zip_code",
+          "type": "input",
+          "value": "12345"
+        },
+        {
+          "name": "Credit Score",
+          "key": "credit_score",
+          "type": "select",
+                  "value": [
+            { "name": "780", "key": 780 },
+            { "name": "750", "key": 750 },
+            { "name": "720", "key": 720 },
+            { "name": "680", "key": 680 },
+            { "name": "620", "key": 620 }
+          ]
+        },
+        {
+          "name": "Sort By",
+          "key": "sort_by",
+          "type": "select",
+          "value": [{ "name": "Rate", "key": "rate" }]
+        },
+        {
+          "name": "Sort Type",
+          "key": "sort_type",
+          "type": "select",
+          "value": [{ "name": "Ascending", "key": "asc" }, { "name": "Descending", "key": "desc" }]
+        },
+        {
+          "name": "Loan Type",
+          "key": "product",
+          "type": "checkbox",
+          "value": [
+            { "name": "CONVENTIONAL", "key": "CONVENTIONAL" },
+            { "name": "JUMBO", "key": "JUMBO" },
+            { "name": "VA", "key": "VA" },
+            { "name": "FHA", "key": "FHA" }
+          ]
+        }
+      ],
+      "column_mappings": [
+        {
+          "name": "Lending Partner",
+          "key": "lender_id",
+          "unit": ""
+        },
+        {
+          "name": "Loan Type",
+          "key": "product",
+          "unit": ""
+        },
+        {
+          "name": "Fixed Rate",
+          "keys": ["overall_min_rate", "overall_max_rate"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Fixed APR",
+          "keys": ["overall_min_apr", "overall_max_apr"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Term",
+          "keys": ["overall_min_terms", "overall_max_terms"],
+          "delimiter": " - ",
+          "unit": "Yrs"
+        },
+        {
+          "name": "Link",
+          "key": "url",
+          "unit": ""
+        }
+      ]
+    },
+    "student_loans": {
+      "filter_data": [
+        {
+          "name": "Zip Code",
+          "key": "zip_code",
+          "type": "input",
+          "value": "12345"
+        },
+        {
+          "name": "Credit Score",
+          "key": "credit_score",
+          "type": "select",
+                  "value": [
+            { "name": "780", "key": 780 },
+            { "name": "750", "key": 750 },
+            { "name": "720", "key": 720 },
+            { "name": "680", "key": 680 },
+            { "name": "620", "key": 620 }
+          ]
+        },
+        {
+          "name": "Sort By",
+          "key": "sort_by",
+          "type": "select",
+          "value": [{ "name": "Term", "key": "term" }]
+        },
+        {
+          "name": "Sort Type",
+          "key": "sort_type",
+          "type": "select",
+          "value": [{ "name": "Ascending", "key": "asc" }, { "name": "Descending", "key": "desc" }]
+        }
+      ],
+      "column_mappings": [
+        {
+          "name": "Lending Partner",
+          "key": "lender_id",
+          "unit": ""
+        },
+        {
+          "name": "APR",
+          "keys": ["overall_min_apr", "overall_max_apr"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Term",
+          "keys": ["overall_min_terms", "overall_max_terms"],
+          "delimiter": " - ",
+          "unit": "Yrs"
+        },
+        {
+          "name": "Link",
+          "key": "url",
+          "unit": ""
+        }
+      ]
+    },
+    "home_equity_loans": {
+      "filter_data": [
+        {
+          "name": "Zip Code",
+          "key": "zip_code",
+          "type": "input",
+          "value": "12345"
+        },
+        {
+          "name": "Credit Score",
+          "key": "credit_score",
+          "type": "select",
+                  "value": [
+            { "name": "780", "key": 780 },
+            { "name": "750", "key": 750 },
+            { "name": "720", "key": 720 },
+            { "name": "680", "key": 680 },
+            { "name": "620", "key": 620 }
+          ]
+        },
+        {
+          "name": "Sort By",
+          "key": "sort_by",
+          "type": "select",
+          "value": [{ "name": "Amount", "key": "amount" }]
+        },
+        {
+          "name": "Sort Type",
+          "key": "sort_type",
+          "type": "select",
+          "value": [{ "name": "Ascending", "key": "asc" }, { "name": "Descending", "key": "desc" }]
+        }
+      ],
+      "column_mappings": [
+        {
+          "name": "Lending Partner",
+          "key": "lender_id",
+          "unit": ""
+        },
+        {
+          "name": "APR",
+          "keys": ["overall_min_rate", "overall_max_rate"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Term",
+          "keys": ["overall_min_terms", "overall_max_terms"],
+          "delimiter": " - ",
+          "unit": "Yrs"
+        },
+        {
+          "name": "Max Amount",
+          "key": "overall_max_amount",
+          "unit": "$"
+        },
+        {
+          "name": "CLTV",
+          "keys": ["overall_min_cltv", "overall_max_cltv"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Link",
+          "key": "url",
+          "unit": ""
+        }
+      ]
+    },
+    "personal_loans": {
+      "filter_data": [
+        {
+          "name": "Zip Code",
+          "key": "zip_code",
+          "type": "input",
+          "value": ["12345"]
+        },
+        {
+          "name": "Credit Score",
+          "key": "credit_score",
+          "type": "select",
+                  "value": [
+            { "name": "780", "key": 780 },
+            { "name": "750", "key": 750 },
+            { "name": "720", "key": 720 },
+            { "name": "680", "key": 680 },
+            { "name": "620", "key": 620 }
+          ]
+        },
+        {
+          "name": "Sort By",
+          "key": "sort_by",
+          "type": "select",
+          "value": [{ "name": "APR", "key": "apr" }]
+        },
+        {
+          "name": "Sort Type",
+          "key": "sort_type",
+          "type": "select",
+          "value": [{ "name": "Ascending", "key": "asc" }, { "name": "Descending", "key": "desc" }]
+        }
+      ],
+      "column_mappings": [
+        {
+          "name": "Lending Partner",
+          "key": "lender_id",
+          "unit": ""
+        },
+        {
+          "name": "APR",
+          "keys": ["overall_min_apr", "overall_max_apr"],
+          "delimiter": " - ",
+          "unit": "%"
+        },
+        {
+          "name": "Term",
+          "keys": ["overall_min_terms", "overall_max_terms"],
+          "delimiter": " - ",
+          "unit": "Yrs"
+        },
+        {
+          "name": "Amount",
+          "keys": ["overall_min_amount", "overall_max_amount"],
+          "delimiter": " - ",
+          "unit": "$"
+        },
+        {
+          "name": "Link",
+          "key": "url",
+          "unit": ""
+        }
+      ]
+    }
+  }  

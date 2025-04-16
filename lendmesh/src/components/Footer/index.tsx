@@ -114,7 +114,7 @@ export default function Footer() {
           {/* <!-- Middle Section: Links (Loans, Discover, Security) --> */}
           <div className="grid grid-cols-3 gap-12">
             {/* <!-- Loans Section --> */}
-            <div>
+            <>
               <h3 className="font-bold text-xl">Loans</h3>
               <ul className="space-y-2">
                 <li>
@@ -143,10 +143,10 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </>
 
             {/* <!-- Discover Section --> */}
-            <div>
+            <>
               <h3 className="font-bold text-xl">Discover</h3>
               <ul className="space-y-2">
                 <li>
@@ -166,14 +166,14 @@ export default function Footer() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-[#6BE3A2] transition">
-                    FAQ's
+                    FAQs
                   </a>
                 </li>
               </ul>
-            </div>
+            </>
 
             {/* <!-- Security & Protection Section --> */}
-            <div>
+            <>
               <h3 className="font-bold text-xl">Security & Protection</h3>
               <ul className="space-y-2">
                 <li>
@@ -192,7 +192,7 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </>
           </div>
         </div>
         {/* <!-- Right Section: Logo and Social Media --> */}

@@ -455,12 +455,12 @@ export default function Home() {
             </div>
 
             {/* <!-- FAQ 4 --> */}
-            <div>
+            <>
               <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
                 Is LendMesh free to use?
                 <span className="text-xl">+</span>
               </h4>
-            </div>
+            </>
           </div>
         </div>
       </div>
