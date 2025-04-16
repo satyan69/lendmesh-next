@@ -151,7 +151,7 @@ export default function Home() {
        **/}
       {/* About Lendmesh */}
 
-      <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center home-about-lendmesh">
+      <div className="bg-white pt-100 pb-16 px-4 md:px-10 lg:px-20 text-center home-about-lendmesh">
         {/* <!-- Title Section --> */}
         <h2 className="text-4xl font-bold">About Lendmesh</h2>
 
@@ -293,9 +293,11 @@ export default function Home() {
        **
        **/}
       {/* Bank & Credit Union */}
-      <h2 className="text-4xl font-bold text-center mb-12">
-        Bank & Credit Union
-      </h2>
+      <div className="py-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
+        <h2 className="text-4xl font-bold text-center pb-12">
+          Bank & Credit Union
+        </h2>
+      </div>
       {/*
        **
        **
@@ -303,19 +305,19 @@ export default function Home() {
        **
        **/}
       {/* Blogs */}
-      <div className="bg-gray-50 py-16 px-4 md:px-10 lg:px-20">
+      <div className="py-16 px-4 md:px-10 lg:px-20">
         <h2 className="text-4xl font-bold text-center mb-12">Blogs</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 blogs">
           {/* <!-- Blog 1 --> */}
-          <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition border border-gray-200">
+          <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
             <Image
               className="w-full object-cover"
               src={blog1}
               alt="Credit Card Loan"
               priority
             />
-            <div className="p-6">
+            <div className="py-6">
               <h3 className="text-2xl font-bold text-blue-900">
                 Lorem ipsum dolor sit amet, elit
               </h3>
@@ -327,7 +329,7 @@ export default function Home() {
                 className="text-green-500 mt-4 inline-flex items-center hover:text-green-600"
               >
                 Read more{" "}
-                <span className="ml-1 transition-transform hover:translate-x-2">
+                <span className="ml-1 text-[#4296EA] transition-transform hover:translate-x-2">
                   →
                 </span>
               </a>
@@ -335,7 +337,7 @@ export default function Home() {
           </div>
 
           {/* <!-- Blog 2 --> */}
-          <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition border border-gray-200">
+          <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
             <Image
               className="w-full object-cover"
               src={blog2}
@@ -354,7 +356,7 @@ export default function Home() {
                 className="text-green-500 mt-4 inline-flex items-center hover:text-green-600"
               >
                 Read more{" "}
-                <span className="ml-1 transition-transform hover:translate-x-2">
+                <span className="ml-1 text-[#4296EA] transition-transform hover:translate-x-2">
                   →
                 </span>
               </a>
@@ -362,7 +364,7 @@ export default function Home() {
           </div>
 
           {/* <!-- Blog 3 --> */}
-          <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition border border-gray-200">
+          <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
             <Image
               className="w-full object-cover"
               src={blog3}
@@ -381,7 +383,7 @@ export default function Home() {
                 className="text-[#6BE3A2] mt-4 inline-flex items-center hover:text-[#6BE3A2]"
               >
                 Read more{" "}
-                <span className="ml-1 transition-transform hover:translate-x-2">
+                <span className="ml-1 text-[#4296EA] transition-transform hover:translate-x-2">
                   →
                 </span>
               </a>
@@ -400,7 +402,7 @@ export default function Home() {
        **
        **/}
       {/* Any Questions? */}
-      <div className="bg-white py-16 px-4 md:px-10 lg:px-20">
+      <div className="bg-white py-16 px-4 md:px-10 lg:px-20 home_any_questions">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* <!-- Left Section --> */}
           <div className="space-y-6">
