@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Metadata } from "next";
+import step_1 from "./../assets/img/about/about_1.svg";
+import step_2 from "./../assets/img/about/about_2.svg";
+import step_3 from "./../assets/img/about/about_3.svg";
 
 export const metadata: Metadata = {
   title: "About LendMesh | Your Trusted Loan Aggregator Partner",
@@ -138,6 +141,70 @@ const AboutPage = () => {
           </div>
           {/*  */}
           {/*  */}
+          <section className="bg-[#001B45] py-16">
+            <div className="container mx-auto px-5 md:px-10 lg:px-20">
+              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">
+                How It All Started
+              </h2>
+              <div className="grid grid-cols-3 gap-12">
+                <div className="mb-4">
+                  <span className="text-[#4296EA] font-bold text-xl">01</span>
+                  <h6 className="text-white text-lg font-bold mb-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                  <p className="text-white text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div className="col-span-2">
+                  <Image
+                    className="dark:invert"
+                    src={step_1}
+                    alt="Personal Loan"
+                    priority
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-3">
+                <div className="col-span-2 gap-12 justify-items-end items-end">
+                  <Image
+                    className="dark:invert"
+                    src={step_2}
+                    alt="Personal Loan"
+                    priority
+                  />
+                </div>
+                <div className="mb-4">
+                  <span className="text-[#4296EA] font-bold text-xl">02</span>
+                  <h6 className="text-white text-lg font-bold mb-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                  <p className="text-white text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 gap-12 text-center justify-items-center items-center">
+                <div className="mb-4">
+                  <Image
+                    className="dark:invert"
+                    src={step_3}
+                    alt="Personal Loan"
+                    priority
+                  />
+                </div>
+                <div className="mb-4">
+                  <span className="text-[#4296EA] font-bold text-xl">03</span>
+                  <h6 className="text-white text-lg font-bold mb-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h6>
+                  <p className="text-white text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
       </div>
     </>
