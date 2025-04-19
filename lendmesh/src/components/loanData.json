@@ -36,26 +36,40 @@
         {
           "name": "Lending Partner",
           "key": "lender_id",
-          "unit": ""
+          "unit": "",
+          "id":1
         },
         {
           "name": "APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":2
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
-          "unit": "Yrs"
+          "unit": "Yrs",
+          "id":3
         },
         {
           "name": "Link",
           "key": "url",
-          "unit": ""
+          "unit": "",
+          "id":4
         }
-      ]
+      ],
+      "tabs": [{
+        "tabName": "New",
+        "key": "new",
+        "id": 1
+      },
+      {
+        "tabName": "Used",
+        "key": "used",
+        "id": 2
+      }]
     },
     "mortgage_loans": {
       "filter_data": [
@@ -105,7 +119,8 @@
         {
           "name": "Lending Partner",
           "key": "lender_id",
-          "unit": ""
+          "unit": "",
+          "id": 1
         },
         {
           "name": "Loan Type",
@@ -116,26 +131,31 @@
           "name": "Fixed Rate",
           "keys": ["overall_min_rate", "overall_max_rate"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":2
         },
         {
           "name": "Fixed APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":3
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
-          "unit": "Yrs"
+          "unit": "Yrs",
+          "id":4
         },
         {
           "name": "Link",
           "key": "url",
-          "unit": ""
+          "unit": "",
+          "id":5
         }
-      ]
+      ],
+      "tabs": []
     },
     "student_loans": {
       "filter_data": [
@@ -174,26 +194,40 @@
         {
           "name": "Lending Partner",
           "key": "lender_id",
-          "unit": ""
+          "unit": "",
+          "id":1
         },
         {
           "name": "APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":2
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
-          "unit": "Yrs"
+          "unit": "Yrs",
+          "id":3
         },
         {
           "name": "Link",
           "key": "url",
-          "unit": ""
+          "unit": "",
+          "id":4
         }
-      ]
+      ],
+      "tabs": [{
+        "tabName": "New",
+        "key": "new",
+        "id": 1
+      },
+      {
+        "tabName": "Refinance",
+        "key": "refinance",
+        "id": 2
+      }]
     },
     "home_equity_loans": {
       "filter_data": [
@@ -232,37 +266,44 @@
         {
           "name": "Lending Partner",
           "key": "lender_id",
-          "unit": ""
+          "unit": "",
+          "id":1
         },
         {
           "name": "APR",
           "keys": ["overall_min_rate", "overall_max_rate"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":2
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
-          "unit": "Yrs"
+          "unit": "Yrs",
+          "id":3
         },
         {
           "name": "Max Amount",
           "key": "overall_max_amount",
-          "unit": "$"
+          "unit": "$",
+          "id":4
         },
         {
           "name": "CLTV",
           "keys": ["overall_min_cltv", "overall_max_cltv"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":5
         },
         {
           "name": "Link",
           "key": "url",
-          "unit": ""
+          "unit": "",
+          "id":6
         }
-      ]
+      ],
+      "tabs": []
     },
     "personal_loans": {
       "filter_data": [
@@ -301,31 +342,37 @@
         {
           "name": "Lending Partner",
           "key": "lender_id",
-          "unit": ""
+          "unit": "",
+          "id":1
         },
         {
           "name": "APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
-          "unit": "%"
+          "unit": "%",
+          "id":2
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
-          "unit": "Yrs"
+          "unit": "Yrs",
+          "id":3
         },
         {
           "name": "Amount",
           "keys": ["overall_min_amount", "overall_max_amount"],
           "delimiter": " - ",
-          "unit": "$"
+          "unit": "$",
+          "id":4
         },
         {
           "name": "Link",
           "key": "url",
-          "unit": ""
+          "unit": "",
+          "id":5
         }
-      ]
+      ],
+      "tabs": []
     }
   }  

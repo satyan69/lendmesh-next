@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import blog from "./../assets/img/blog/blog.png";
-import blog1 from "./../assets/img/blog/blog_1.png";
-import blog2 from "./../assets/img/blog/blog_2.png";
-import blog3 from "./../assets/img/blog/blog_3.png";
+// import blog from "../assets/img/blog/blog.png";
+import blog1 from "../assets/img/blog/blog_1.png";
+import blog2 from "../assets/img/blog/blog_2.png";
+import blog3 from "../assets/img/blog/blog_3.png";
 
 export default function BlogPage() {
   return (
@@ -63,12 +63,12 @@ export default function BlogPage() {
                 alt="money"
                 className="h-full w-full object-cover"
               /> */}
-              <Image
+              {/* <Image
                 className="dark:invert h-full w-full object-cover"
                 src={blog}
                 alt="Personal Loan"
                 priority
-              />
+              /> */}
             </div>
           </div>
         </section>

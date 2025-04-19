@@ -64,9 +64,9 @@ async function getInitialLoans(loanType: string) {
   const params = new URLSearchParams({
     loanType,
     zip: '',
-    creditScore: '780',
-    sortBy: 'APR',
-    sortType: 'asc',
+    creditScore: '',
+    sortBy: '',
+    sortType: '',
     page: '1',
   });
   //console.log(`url - ${process.env.NEXT_PUBLIC_BASE_URL}/api/loans?${params.toString()}`)
@@ -76,7 +76,7 @@ async function getInitialLoans(loanType: string) {
 
   return res.json();
 }
-export default async function LoansPage({ params }: { params: { type: string } }) {
+export default async function LoansPage({ params }: { params: any }) {
   const { type } = await params;
   const initialData = await getInitialLoans(type);
   // console.log('initialData', initialData)

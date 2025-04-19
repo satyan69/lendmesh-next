@@ -1,0 +1,177 @@
+{
+  "vehicle_loans": {
+    "column_mappings": [
+      {
+        "name": "Loan Program",
+        "key": "loan_program_name",
+        "unit": ""
+      },
+      {
+        "name": "Loan Type",
+        "key": "loan_type",
+        "unit": ""
+      },
+      {
+        "name": "APR",
+        "keys": ["min_apr", "max_apr"],
+        "delimiter": " - ",
+        "unit": "%"
+      },
+      {
+        "name": "Term",
+        "keys": ["min_loan_term", "max_loan_term"],
+        "delimiter": " - ",
+        "unit": "Yrs"
+      },
+      {
+        "name": "Link",
+        "key": "url",
+        "unit": ""
+      }
+    ]
+  },
+
+  "mortgage_loans": {
+    "column_mappings": [
+      {
+        "name": "Loan Type",
+        "key": "loan_category",
+        "unit": ""
+      },
+      {
+        "name": "Product Type",
+        "key": "loan_product_type",
+        "unit": ""
+      },
+      {
+        "name": "Program Type",
+        "key": "program_type",
+        "unit": ""
+      },
+      {
+        "name": "Rate",
+        "key": "rate_range",
+        "unit": "%"
+      },
+      {
+        "name": "APR",
+        "key": "apr_range",
+        "unit": "%"
+      },
+      {
+        "name": "Points",
+        "key": "points",
+        "unit": ""
+      },
+      {
+        "name": "Term",
+        "key": "loan_terms_range",
+        "unit": "Yrs"
+      },
+      {
+        "name": "Link",
+        "key": "url",
+        "unit": ""
+      }
+    ]
+  },
+  "student_loans": {
+    "column_mappings": [
+      {
+        "name": "Program Name",
+        "key": "program_name",
+        "unit": ""
+      },
+      {
+        "name": "APR",
+        "keys": ["min_apr", "max_apr"],
+        "delimiter": " - ",
+        "unit": "%"
+      },
+      {
+        "name": "Term",
+        "keys": ["min_loan_term", "max_loan_term"],
+        "delimiter": " - ",
+        "unit": "Yrs"
+      },
+      {
+        "name": "Link",
+        "key": "url",
+        "unit": ""
+      }
+    ]
+  },
+  "home_equity_loans": {
+    "column_mappings": [
+      {
+        "name": "Program Name",
+        "key": "program_name",
+        "unit": ""
+      },
+      {
+        "name": "Loan Type",
+        "key": "loan_type_name",
+        "unit": ""
+      },
+      {
+        "name": "APR",
+        "keys": ["min_rate", "max_rate"],
+        "delimiter": " - ",
+        "unit": "%"
+      },
+      {
+        "name": "Term",
+        "keys": ["min_loan_term", "max_loan_term"],
+        "delimiter": " - ",
+        "unit": "Yrs"
+      },
+      {
+        "name": "Max Amount",
+        "key": "max_amount",
+        "unit": "$"
+      },
+      {
+        "name": "CLTV",
+        "key": "max_cltv",
+        "unit": "%"
+      },
+      {
+        "name": "Link",
+        "key": "url",
+        "unit": ""
+      }
+    ]
+  },
+  "personal_loans": {
+    "column_mappings": [
+      {
+        "name": "Program Name",
+        "key": "program_name",
+        "unit": ""
+      },
+      {
+        "name": "APR",
+        "keys": ["overall_min_apr", "overall_max_apr"],
+        "delimiter": " - ",
+        "unit": "%"
+      },
+      {
+        "name": "Term",
+        "keys": ["overall_min_terms", "overall_max_terms"],
+        "delimiter": " - ",
+        "unit": "Yrs"
+      },
+      {
+        "name": "Amount",
+        "keys": ["overall_min_amount", "overall_max_amount"],
+        "delimiter": " - ",
+        "unit": "$"
+      },
+      {
+        "name": "Link",
+        "key": "url",
+        "unit": ""
+      }
+    ]
+  }
+}
