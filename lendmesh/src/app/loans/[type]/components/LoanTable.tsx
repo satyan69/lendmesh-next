@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import Image from "next/image";
 import LoanDetail from "./LoanDetail";
 import Link from "next/link";
 import { Loan } from "@/types/loans";
@@ -35,7 +36,7 @@ export default function LoanTable({
   const BankImage = ({ href, loan }: { href: string; loan: Loan }) => (
     <div className="flex justify-center rounded-xl py-3 dark:bg-white" title={`${loan.name}`}>
       <Link target='_blank' href={`/banks/details/${href}`}>
-      <img 
+      <Image 
         src={`/images/brands/bank/${href}.png`} 
         alt={`${href}`} 
         className="h-10 w-20"
@@ -85,7 +86,7 @@ export default function LoanTable({
           <Fragment key={i}>
             <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
            
-              {columnMappings.map((column: { name: string; key: string | null; keys?: string[]; unit: string; delimiter: string, id: number }, index) => (
+              {columnMappings.map((column: { name: string; key: string | null; keys?: string[]; unit: string; delimiter: string, id: number }) => (
               <div key={column.id} className="w-[25%] pr-2">{renderCellContent(loan, column)}</div>
             ))}
 

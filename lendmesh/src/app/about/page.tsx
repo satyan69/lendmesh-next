@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import step_1 from "./../assets/img/about/about_1.svg";
 import step_2 from "./../assets/img/about/about_2.svg";
 import step_3 from "./../assets/img/about/about_3.svg";
