@@ -1,6 +1,4 @@
 // components/HeaderShell.tsx
-import Image from "next/image";
-import Link from "next/link";
 import logo from "./../../app/assets/img/logo.svg";
 import menuData from "./menuData";
 import ClientHeader from "./ClientHeader";

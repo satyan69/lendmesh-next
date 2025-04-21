@@ -9,9 +9,10 @@ import homeEquityLoan from "./assets/img/offerings/home_equity_loan.svg";
 import creditCardLoan from "./assets/img/offerings/credit_card_loan.svg";
 
 // Loan Solutions
-import blog1 from "./assets/img/blog/blog_3.png";
-import blog2 from "./assets/img/blog/blog_2.png";
-import blog3 from "./assets/img/blog/blog_1.png";
+
+import Clients from "../components/Clients";
+import HomeAbout from "@/components/HomeAbout";
+import HomeBlogs from "@/components/HomeBlogs";
 
 export default function Home() {
   return (
@@ -151,47 +152,7 @@ export default function Home() {
        **/}
       {/* About Lendmesh */}
 
-      <div className="bg-white pt-100 pb-16 px-4 md:px-10 lg:px-20 text-center home-about-lendmesh">
-        {/* <!-- Title Section --> */}
-        <h2 className="text-4xl font-bold">About Lendmesh</h2>
-
-        <p className="text-lg mt-4 max-w-3xl mx-auto leading-relaxed">
-          At LendMesh, we believe finding the right loan should be simple,
-          transparent, and stress-free. Our platform connects you with top
-          lenders and credit unions across the USA, offering real-time rates and
-          tailored loan options, all in one place.
-        </p>
-
-        {/* <!-- Stats Section (2x2 Grid on Mobile) --> */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-[#4296EA]">100+</h3>
-            <p>clients</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-[#4296EA]">100+</h3>
-            <p>clients</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-[#4296EA]">100+</h3>
-            <p>clients</p>
-          </div>
-          <div className="text-center">
-            <h3 className="text-4xl font-bold text-[#4296EA]">100+</h3>
-            <p>clients</p>
-          </div>
-        </div>
-
-        {/* <!-- Button Section --> */}
-        <div className="mt-10">
-          <button
-            typeof="button"
-            className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
-          >
-            Know more
-          </button>
-        </div>
-      </div>
+      <HomeAbout />
       {/*
        **
        **
@@ -305,102 +266,8 @@ export default function Home() {
        **
        **/}
       {/* Blogs */}
-      <div className="py-16 px-4 md:px-10 lg:px-20">
-        <h2 className="text-4xl font-bold text-center mb-12">Blogs</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 blogs">
-          {/* <!-- Blog 1 --> */}
-          <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
-            <Image
-              className="w-full object-cover"
-              src={blog1}
-              alt="Credit Card Loan"
-              priority
-            />
-            <div className="py-6">
-              <h3 className="text-2xl font-bold text-blue-900">
-                Lorem ipsum dolor sit amet, elit
-              </h3>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet, elit do eiusmod tempor
-              </p>
-              <a
-                href="#"
-                className="text-green-500 mt-4 inline-flex items-center hover:text-green-600"
-              >
-                Read more{" "}
-                <span className="ml-1 text-[#4296EA] transition-transform hover:translate-x-2">
-                  →
-                </span>
-              </a>
-            </div>
-          </div>
-
-          {/* <!-- Blog 2 --> */}
-          <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
-            <Image
-              className="w-full object-cover"
-              src={blog2}
-              alt="Credit Card Loan"
-              priority
-            />
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-blue-900">
-                Lorem ipsum dolor sit amet, elit
-              </h3>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet, elit do eiusmod tempor
-              </p>
-              <a
-                href="#"
-                className="text-green-500 mt-4 inline-flex items-center hover:text-green-600"
-              >
-                Read more{" "}
-                <span className="ml-1 text-[#4296EA] transition-transform hover:translate-x-2">
-                  →
-                </span>
-              </a>
-            </div>
-          </div>
-
-          {/* <!-- Blog 3 --> */}
-          <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
-            <Image
-              className="w-full object-cover"
-              src={blog3}
-              alt="Credit Card Loan"
-              priority
-            />
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-blue-900">
-                Lorem ipsum dolor sit amet, elit
-              </h3>
-              <p className="mt-2">
-                Lorem ipsum dolor sit amet, elit do eiusmod tempor
-              </p>
-              <a
-                href="#"
-                className="text-[#6BE3A2] mt-4 inline-flex items-center hover:text-[#6BE3A2]"
-              >
-                Read more{" "}
-                <span className="ml-1 text-[#4296EA] transition-transform hover:translate-x-2">
-                  →
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center mt-10">
-          <button className="bg-[#6BE3A2] text-[#002144] px-6 py-3 rounded-md shadow hover:bg-green-500 transition">
-            More Blogs
-          </button>
-        </div>
-      </div>
-      {/*
-       **
-       **
-       **/}
+      
+      <HomeBlogs />
       {/* Any Questions? */}
       <div className="bg-white py-16 px-4 md:px-10 lg:px-20 home_any_questions">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -415,7 +282,6 @@ export default function Home() {
               eiusmod tempor incididunt ut.
             </p>
             <button
-              typeof="button"
               className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
             >
               More info
@@ -469,52 +335,7 @@ export default function Home() {
        **
        **/}
       {/* Our Trusted Clients */}
-
-      <div className="bg-gray-100 py-16 px-4 md:px-10 lg:px-20">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          Our Trusted Clients
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* <!-- Card 1 --> */}
-          <div className="bg-white shadow-lg rounded-lg p-8 transition transform hover:scale-105">
-            <div className="flex justify-center mb-4">
-              <span className="text-[#4296EA] text-2xl">★ ★ ★ ★ ★</span>
-            </div>
-            <p className="text-lg mb-6">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut amet, consectetur”
-            </p>
-            <h4 className="font-bold">Lorem ipsum</h4>
-            <p className="text-[#4296EA]">IT Employee</p>
-          </div>
-
-          {/* <!-- Active Card --> */}
-          <div className="bg-blue-500 shadow-lg rounded-lg p-8 transform scale-105 transition">
-            <div className="flex justify-center mb-4">
-              <span className="text-[#6BE3A2] text-2xl">★ ★ ★ ★ ★</span>
-            </div>
-            <p className="text-white text-lg mb-6">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut amet, consectetur”
-            </p>
-            <h4 className="text-[#6BE3A2] font-bold">Lorem ipsum</h4>
-            <p className="text-white">IT Employee</p>
-          </div>
-
-          {/* <!-- Card 3 --> */}
-          <div className="bg-white shadow-lg rounded-lg p-8 transition transform hover:scale-105">
-            <div className="flex justify-center mb-4">
-              <span className="text-[#4296EA] text-2xl">★ ★ ★ ★ ★</span>
-            </div>
-            <p className="text-lg mb-6">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut amet, consectetur”
-            </p>
-            <h4 className="font-bold">Lorem ipsum</h4>
-            <p className="text-[#4296EA]">IT Employee</p>
-          </div>
-        </div>
-      </div>
+        <Clients />
     </>
   );
 }

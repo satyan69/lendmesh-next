@@ -1,4 +1,12 @@
 import React from "react";
+import { Metadata } from "next";
+import Contact from "@/components/Contact";
+
+export const metadata: Metadata = {
+  title: "Contact | LendMesh",
+  description: "This is Contact Page for LendMesh",
+  // other metadata
+};
 
 export default function ContactPage() {
   return (
@@ -18,41 +26,7 @@ export default function ContactPage() {
         <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-6 lg:px-0">
           <div className="pb-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* <!-- Contact Form --> */}
-            <div className="bg-gray-100 p-6 rounded-lg">
-              <h2 className="text-2xl font-bold text-blue-900 mb-6">
-                Get In Touch With Us
-              </h2>
-              <form className="space-y-4">
-                <div className="flex gap-4">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-1/2 px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-1/2 px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                  />
-                </div>
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  className="w-full px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                />
-                <textarea
-                  rows={4}
-                  placeholder="Message"
-                  className="w-full px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                ></textarea>
-                <button
-                  type="submit"
-                  className="bg-blue-900 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-800 transition"
-                >
-                  Send message
-                </button>
-              </form>
-            </div>
+            <Contact />
 
             {/* <!-- Contact Info --> */}
             <div>
