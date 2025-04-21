@@ -1,27 +1,41 @@
 .home-banner {
-  background-image: url("./assets/img/home/home_banner_lg.png");
+  // background-image: url("./assets/img/home/Banner_lendmesh_1920.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: top;
-  @media screen and (max-width: 1024px) {
-    // height: 40vh;
+  @media screen and (max-width: 1280px) {
+    // background-image: url("./assets/img/home/banner-lendmesh-2.png");
+    background-size: cover;
   }
   @media (max-width: 768px) {
-    // height: 25vh;
-    // min-height: 200px;
+    // background-image: url("./assets/img/home/banner-lendmesh-2.png");
   }
   @media screen and (max-width: 600px) {
     // height: 35vh;
     // min-height: 300px;
   }
 }
-.home-about-lendmesh {
-  background-image: url("./assets/img/home/home_section_1_lg.png");
+.home-banner-part-1 {
+  background-image: url("./assets/img/home/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+.home-banner-part-2 {
+}
+.home-banner-part-2 {
+  background-image: url("./assets/img/home/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.home-about-lendmesh {
+  background-image: url("./assets/img/home/section_1/1920.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
   @media (max-width: 768px) {
-    height: 25vh;
     min-height: 200px;
   }
 }
@@ -56,6 +70,18 @@
   }
 }
 
+.home_bank_credit_union {
+  background-image: url("./assets/img/home/home_section_2_lg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.home_any_questions {
+  background-image: url("./assets/img/home/home_section_3_lg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
 @media (max-width: 768px) {
   .blogs {
     img {
