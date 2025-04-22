@@ -5,7 +5,7 @@ import blog3 from "../../app/assets/img/blog/blog_1.png";
 
 export default function HomeBlogs() {
     return (
-        <div className="py-16 px-4 md:px-10 lg:px-20">
+        <>
         <h2 className="text-4xl font-bold text-center mb-12">Blogs</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 blogs">
@@ -96,6 +96,6 @@ export default function HomeBlogs() {
             More Blogs
           </button>
         </div>
-      </div>
+      </>
     )
 }

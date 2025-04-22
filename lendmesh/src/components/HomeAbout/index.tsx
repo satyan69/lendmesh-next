@@ -1,6 +1,6 @@
 export default function HomeAbout() {
     return (
-        <div className="bg-white pt-100 pb-16 px-4 md:px-10 lg:px-20 text-center home-about-lendmesh">
+        <>
         {/* <!-- Title Section --> */}
         <h2 className="text-4xl font-bold">About Lendmesh</h2>
 
@@ -40,6 +40,6 @@ export default function HomeAbout() {
             Know more
           </button>
         </div>
-      </div>
+      </>
     )
 }

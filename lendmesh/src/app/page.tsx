@@ -159,46 +159,55 @@ export default function Home() {
        **
        **/}
       {/* About Lendmesh */}
-
-      <HomeAbout />
+      <section className="bg-white pt-75 sm:pt-100 pb-16 px-4 md:px-10 lg:px-20 text-center home-about-lendmesh">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <HomeAbout />
+        </div>
+      </section>
       {/*
        **
        **
        **/}
       {/* Tails with Info */}
-      <div className="bg-white py-16 px-4 md:px-10 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* <!-- Card 1 --> */}
-          <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-            <h3 className="text-2xl font-bold">All inquires are free</h3>
-            <p className="mt-4 leading-relaxed">
-              No obligations, no charge - that's the Lendmesh way. We strive to
-              match homebuyers with top lenders, and you take it from there.
-            </p>
-          </div>
+      <section className="bg-white py-16 px-4 md:px-10 lg:px-20">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* <!-- Card 1 --> */}
+            <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+              <h3 className="text-2xl font-bold">All inquires are free</h3>
+              <p className="mt-4 leading-relaxed">
+                No obligations, no charge - that's the Lendmesh way. We strive
+                to match homebuyers with top lenders, and you take it from
+                there.
+              </p>
+            </div>
 
-          {/* <!-- Card 2 --> */}
-          <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-            <h3 className="text-2xl font-bold">Will Not Affect Your Credit</h3>
-            <p className="mt-4 leading-relaxed">
-              You worked hard to build your credit score, we'll work hard to
-              protect it. Your mortgage inquiry here on our platform will not
-              affect your rating.
-            </p>
-          </div>
+            {/* <!-- Card 2 --> */}
+            <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+              <h3 className="text-2xl font-bold">
+                Will Not Affect Your Credit
+              </h3>
+              <p className="mt-4 leading-relaxed">
+                You worked hard to build your credit score, we'll work hard to
+                protect it. Your mortgage inquiry here on our platform will not
+                affect your rating.
+              </p>
+            </div>
 
-          {/* <!-- Card 3 --> */}
-          <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-            <h3 className="text-2xl font-bold">
-              Your Information Is Safe With Us
-            </h3>
-            <p className="mt-4 leading-relaxed">
-              Buying a home is serious business, and we take data security just
-              as seriously. Your information is secured every step of the way.
-            </p>
+            {/* <!-- Card 3 --> */}
+            <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+              <h3 className="text-2xl font-bold">
+                Your Information Is Safe With Us
+              </h3>
+              <p className="mt-4 leading-relaxed">
+                Buying a home is serious business, and we take data security
+                just as seriously. Your information is secured every step of the
+                way.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/*
        **
@@ -207,54 +216,56 @@ export default function Home() {
        **
        **/}
       {/*  loan solution! */}
-      <div className="bg-white text-center py-12 px-6">
-        {/* <!-- Heading --> */}
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Unlock your potential with the <br /> perfect loan solution!
-        </h1>
+      <section className="bg-white text-center py-12 px-6">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          {/* <!-- Heading --> */}
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Unlock your potential with the <br /> perfect loan solution!
+          </h1>
 
-        <p className="text-lg max-w-3xl mx-auto mb-12">
-          Buying a home is a big decision—our Mortgage Calculator and Home
-          Affordability Calculator help you plan with confidence.
-        </p>
+          <p className="text-lg max-w-3xl mx-auto mb-12">
+            Buying a home is a big decision—our Mortgage Calculator and Home
+            Affordability Calculator help you plan with confidence.
+          </p>
 
-        {/* <!-- Container --> */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* <!-- Home Affordability --> */}
-          <div className="flex flex-col items-center justify-start p-8 bg-gray-50 rounded-lg shadow-md home_affordability">
-            <h2 className="text-2xl font-bold mb-8">Home Affordability</h2>
-            {/* <Image
+          {/* <!-- Container --> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* <!-- Home Affordability --> */}
+            <div className="flex flex-col items-center justify-start p-8 bg-gray-50 rounded-lg shadow-md home_affordability">
+              <h2 className="text-2xl font-bold mb-8">Home Affordability</h2>
+              {/* <Image
               className="dark:invert"
               src={homeAffordability}
               alt="Personal Loan"
               priority
             /> */}
-            <a
-              href="#"
-              className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
-            >
-              Calculate
-            </a>
-          </div>
+              <a
+                href="#"
+                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
+              >
+                Calculate
+              </a>
+            </div>
 
-          {/* <!-- Mortgage Calculator --> */}
-          <div className="flex flex-col items-center justify-start p-8 bg-blue-900 text-white rounded-lg shadow-md mortgage_calculator">
-            <h2 className="text-2xl font-bold mb-8">Mortgage Calculator</h2>
-            {/* <Image
+            {/* <!-- Mortgage Calculator --> */}
+            <div className="flex flex-col items-center justify-start p-8 bg-blue-900 text-white rounded-lg shadow-md mortgage_calculator">
+              <h2 className="text-2xl font-bold mb-8">Mortgage Calculator</h2>
+              {/* <Image
               className="dark:invert"
               src={mortgageCalculator}
               alt="Mortgage Calculator"
               priority
             /> */}
-            <a
-              href="#"
-              className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
-            >
-              Calculate
-            </a>
+              <a
+                href="#"
+                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
+              >
+                Calculate
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       {/*
        **
        **
@@ -262,11 +273,13 @@ export default function Home() {
        **
        **/}
       {/* Bank & Credit Union */}
-      <div className="py-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
-        <h2 className="text-4xl font-bold text-center pb-12">
-          Bank & Credit Union
-        </h2>
-      </div>
+      <section className="py-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <h2 className="text-4xl font-bold text-center pb-12">
+            Bank & Credit Union
+          </h2>
+        </div>
+      </section>
       {/*
        **
        **
@@ -274,76 +287,84 @@ export default function Home() {
        **
        **/}
       {/* Blogs */}
-      
-      <HomeBlogs />
+      <section className="py-16 px-4 md:px-10 lg:px-20">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <HomeBlogs />
+        </div>
+      </section>
+
       {/* Any Questions? */}
-      <div className="bg-white py-16 px-4 md:px-10 lg:px-20 home_any_questions">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* <!-- Left Section --> */}
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-[#4296EA]">
-              Any Questions?
-            </h2>
-            <h3 className="text-3xl font-bold">We got you</h3>
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut.
-            </p>
-            <button
-              className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
-            >
-              More info
-            </button>
-          </div>
-
-          {/* <!-- Right Section --> */}
-          <div className="space-y-4">
-            {/* <!-- FAQ 1 --> */}
-            <div className="border-b pb-4">
-              <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                What is LendMesh?
-                <span className="text-xl">-</span>
-              </h4>
-              <p className="text-gray-700 mt-2">
-                LendMesh is a loan comparison platform that connects borrowers
-                with trusted credit unions and lenders across the USA. We help
-                you find the best loan offers with the lowest interest rates—all
-                in one place, 100% free.
+      <section className="bg-white py-16 px-4 md:px-10 lg:px-20 home_any_questions">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* <!-- Left Section --> */}
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold text-[#4296EA]">
+                Any Questions?
+              </h2>
+              <h3 className="text-3xl font-bold">We got you</h3>
+              <p className="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut.
               </p>
+              <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
+                More info
+              </button>
             </div>
 
-            {/* <!-- FAQ 2 --> */}
-            <div className="border-b pb-4">
-              <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                How does LendMesh work?
-                <span className="text-xl">+</span>
-              </h4>
-            </div>
+            {/* <!-- Right Section --> */}
+            <div className="space-y-4">
+              {/* <!-- FAQ 1 --> */}
+              <div className="border-b pb-4">
+                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
+                  What is LendMesh?
+                  <span className="text-xl">-</span>
+                </h4>
+                <p className="text-gray-700 mt-2">
+                  LendMesh is a loan comparison platform that connects borrowers
+                  with trusted credit unions and lenders across the USA. We help
+                  you find the best loan offers with the lowest interest
+                  rates—all in one place, 100% free.
+                </p>
+              </div>
 
-            {/* <!-- FAQ 3 --> */}
-            <div className="border-b pb-4">
-              <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                Does LendMesh provide loans directly?
-                <span className="text-xl">+</span>
-              </h4>
-            </div>
+              {/* <!-- FAQ 2 --> */}
+              <div className="border-b pb-4">
+                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
+                  How does LendMesh work?
+                  <span className="text-xl">+</span>
+                </h4>
+              </div>
 
-            {/* <!-- FAQ 4 --> */}
-            <>
-              <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                Is LendMesh free to use?
-                <span className="text-xl">+</span>
-              </h4>
-            </>
+              {/* <!-- FAQ 3 --> */}
+              <div className="border-b pb-4">
+                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
+                  Does LendMesh provide loans directly?
+                  <span className="text-xl">+</span>
+                </h4>
+              </div>
+
+              {/* <!-- FAQ 4 --> */}
+              <>
+                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
+                  Is LendMesh free to use?
+                  <span className="text-xl">+</span>
+                </h4>
+              </>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       {/*
        **
        **
        **/}
       {/* Our Trusted Clients */}
-        <Clients />
+      <section className="bg-gray-100 py-16 px-4 md:px-10 lg:px-20">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <Clients />
+        </div>
+      </section>
     </>
   );
 }

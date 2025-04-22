@@ -33,10 +33,29 @@
 .home-about-lendmesh {
   background-image: url("./assets/img/home/section_1/1920.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 60%;
   background-position: 0 0;
+  @media screen and (max-width: 1600px) {
+    background-size: 100% 65%;
+  }
+  @media screen and (max-width: 1280px) {
+    background-image: url("./assets/img/home/section_1/1240.png");
+    background-size: cover;
+  }
   @media (max-width: 768px) {
-    min-height: 200px;
+    background-image: url("./assets/img/home/section_1/768.png");
+    background-size: cover;
+  }
+  @media screen and (max-width: 500px) {
+    background-image: url("./assets/img/home/section_1/375.png");
+    background-size: cover;
+    padding-top: 250px;
+  }
+  @media screen and (max-width: 400px) {
+    padding-top: 220px;
+  }
+  @media screen and (max-width: 300px) {
+    padding-top: 200px;
   }
 }
 
