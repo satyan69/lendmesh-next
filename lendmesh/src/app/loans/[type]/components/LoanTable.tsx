@@ -34,7 +34,7 @@ export default function LoanTable({
     return '';
   }
   const BankImage = ({ href, loan }: { href: string; loan: Loan }) => (
-    <div className="flex justify-center rounded-xl py-3 dark:bg-white" title={`${loan.name}`}>
+    <div className="flex justify-start rounded-xl py-3 dark:bg-white" title={`${loan.name}`}>
       <Link target='_blank' href={`/banks/details/${href}`}>
       <Image 
         src={`/images/brands/bank/${href}.png`} 
@@ -77,10 +77,11 @@ export default function LoanTable({
     <div className="w-full">
       <div className="flex font-semibold bg-[#6BE3A2] text-[#002144] py-3 px-4 rounded-tl-[8px] rounded-tr-[8px]">
         {columnMappings.map((column, index: number) => (
-          <div key={index} className="w-[20%] pr-2">
+          <div key={index} className={`w-[${column.width}] pr-2`}>
             {column.name}
           </div>
         ))}
+        <div className="w-[5%] pr-2"></div>
       </div>
 
       {Array.isArray(loans?.data) &&
@@ -88,8 +89,10 @@ export default function LoanTable({
           <Fragment key={i}>
             <div className="border-b border-gray px-4 py-3 flex items-center text-sm font-medium">
            
-              {columnMappings.map((column: { name: string; key: string | null; keys?: string[]; unit: string; delimiter: string, id: number }) => (
-              <div key={column.id} className="w-[25%] pr-2">{renderCellContent(loan, column)}</div>
+              {columnMappings.map((column: {
+                name: string; key: string | null; keys?: string[]; unit: string; delimiter: string, id: number 
+}, index: number) => (
+              <div key={column.id} className={`w-[${columnMappings[index].width}] pr-2`}>{renderCellContent(loan, column)}</div>
             ))}
 
               <div

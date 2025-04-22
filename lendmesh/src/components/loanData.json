@@ -37,27 +37,31 @@
           "name": "Lending Partner",
           "key": "lender_id",
           "unit": "",
-          "id":1
+          "id":1,
+          "width": "25%"
         },
         {
           "name": "APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
           "unit": "%",
-          "id":2
+          "id":2,
+          "width": "25%"
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
           "unit": "Yrs",
-          "id":3
+          "id":3,
+          "width": "25%"
         },
         {
           "name": "Link",
           "key": "url",
           "unit": "",
-          "id":4
+          "id":4,
+          "width": "20%"
         }
       ],
       "tabs": [{
@@ -83,7 +87,7 @@
           "name": "Credit Score",
           "key": "credit_score",
           "type": "select",
-                  "value": [
+          "value": [
             { "name": "780", "key": 780 },
             { "name": "750", "key": 750 },
             { "name": "720", "key": 720 },
@@ -120,39 +124,45 @@
           "name": "Lending Partner",
           "key": "lender_id",
           "unit": "",
-          "id": 1
+          "id": 1,
+          "width": "20%"
         },
         {
           "name": "Loan Type",
           "key": "product",
-          "unit": ""
+          "unit": "",
+          "width": "20%"
         },
         {
           "name": "Fixed Rate",
           "keys": ["overall_min_rate", "overall_max_rate"],
           "delimiter": " - ",
           "unit": "%",
-          "id":2
+          "id":2,
+          "width": "20%"
         },
         {
           "name": "Fixed APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
           "unit": "%",
-          "id":3
+          "id":3,
+          "width": "20%"
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
           "unit": "Yrs",
-          "id":4
+          "id":4,
+          "width": "10%"
         },
         {
           "name": "Link",
           "key": "url",
           "unit": "",
-          "id":5
+          "id":5,
+          "width": "5%"
         }
       ],
       "tabs": []
@@ -195,27 +205,31 @@
           "name": "Lending Partner",
           "key": "lender_id",
           "unit": "",
-          "id":1
+          "id":1,
+          "width": "25%"
         },
         {
           "name": "APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
           "unit": "%",
-          "id":2
+          "id":2,
+          "width": "25%"
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
           "unit": "Yrs",
-          "id":3
+          "id":3,
+          "width": "25%"
         },
         {
           "name": "Link",
           "key": "url",
           "unit": "",
-          "id":4
+          "id":4,
+          "width": "20%"
         }
       ],
       "tabs": [{
@@ -267,40 +281,46 @@
           "name": "Lending Partner",
           "key": "lender_id",
           "unit": "",
-          "id":1
+          "id":1,
+          "width": "20%"
         },
         {
           "name": "APR",
           "keys": ["overall_min_rate", "overall_max_rate"],
           "delimiter": " - ",
           "unit": "%",
-          "id":2
+          "id":2,
+          "width": "20%"
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
           "unit": "Yrs",
-          "id":3
+          "id":3,
+          "width": "20%"
         },
         {
           "name": "Max Amount",
           "key": "overall_max_amount",
           "unit": "$",
-          "id":4
+          "id":4,
+          "width": "20%"
         },
         {
           "name": "CLTV",
           "keys": ["overall_min_cltv", "overall_max_cltv"],
           "delimiter": " - ",
           "unit": "%",
-          "id":5
+          "id":5,
+          "width": "20%"
         },
-        {
+        { 
           "name": "Link",
           "key": "url",
           "unit": "",
-          "id":6
+          "id":6,
+          "width": "20%"
         }
       ],
       "tabs": []
@@ -343,34 +363,39 @@
           "name": "Lending Partner",
           "key": "lender_id",
           "unit": "",
-          "id":1
+          "id":1,
+          "width": "20%"
         },
         {
           "name": "APR",
           "keys": ["overall_min_apr", "overall_max_apr"],
           "delimiter": " - ",
           "unit": "%",
-          "id":2
+          "id":2,
+          "width": "20%"
         },
         {
           "name": "Term",
           "keys": ["overall_min_terms", "overall_max_terms"],
           "delimiter": " - ",
           "unit": "Yrs",
-          "id":3
+          "id":3,
+          "width": "20%"
         },
         {
           "name": "Amount",
           "keys": ["overall_min_amount", "overall_max_amount"],
           "delimiter": " - ",
           "unit": "$",
-          "id":4
+          "id":4,
+          "width": "20%"
         },
         {
           "name": "Link",
           "key": "url",
           "unit": "",
-          "id":5
+          "id":5,
+          "width": "20%"
         }
       ],
       "tabs": []
