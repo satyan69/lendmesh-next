@@ -1,8 +1,5 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import step_1 from "./../assets/img/about/about_1.svg";
-import step_2 from "./../assets/img/about/about_2.svg";
-import step_3 from "./../assets/img/about/about_3.svg";
 
 export const metadata: Metadata = {
   title: "About LendMesh | Your Trusted Loan Aggregator Partner",
@@ -78,7 +75,7 @@ const AboutPage = () => {
               <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
                 <h3 className="text-2xl font-bold">All inquires are free</h3>
                 <p className="mt-4 leading-relaxed">
-                  No obligations, no charge - that's the Lendmesh way. We strive
+                  No obligations, no charge - that&apos;s the Lendmesh way. We strive
                   to match homebuyers with top lenders, and you take it from
                   there.
                 </p>
@@ -90,7 +87,7 @@ const AboutPage = () => {
                   Will Not Affect Your Credit
                 </h3>
                 <p className="mt-4 leading-relaxed">
-                  You worked hard to build your credit score, we'll work hard to
+                  You worked hard to build your credit score, we&apos;ll work hard to
                   protect it. Your mortgage inquiry here on our platform will
                   not affect your rating.
                 </p>
@@ -159,9 +156,11 @@ const AboutPage = () => {
                 <div className="col-span-2">
                   <Image
                     className="dark:invert"
-                    src={step_1}
+                    src={'/images/about/about_1.svg'}
                     alt="Personal Loan"
                     priority
+                    width={100}
+                    height={200}
                   />
                 </div>
               </div>
@@ -169,9 +168,11 @@ const AboutPage = () => {
                 <div className="col-span-2 gap-12 justify-items-end items-end">
                   <Image
                     className="dark:invert"
-                    src={step_2}
+                    src={'/images/about/about_2.svg'}
                     alt="Personal Loan"
                     priority
+                    width={100}
+                    height={200}
                   />
                 </div>
                 <div className="mb-4">
@@ -188,9 +189,11 @@ const AboutPage = () => {
                 <div className="mb-4">
                   <Image
                     className="dark:invert"
-                    src={step_3}
+                    src={'/images/about/about_2.svg'}
                     alt="Personal Loan"
                     priority
+                    width={100}
+                    height={200}
                   />
                 </div>
                 <div className="mb-4">

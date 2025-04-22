@@ -9,7 +9,7 @@
 }
 
 .loans-banner {
-  background-image: url("./../../assets/img/loans/loans_banner_frame.png");
+  background-image: url("/images/loans/loans_banner_frame.png");
 }
 
 select {
@@ -26,7 +26,7 @@ select {
   select {
     width: 100%;
     padding: 8px;
-    background-image: url("./../../assets/img/icons/down_arrow.png");
+    background-image: url("/images/icons/down_arrow.png");
     background-repeat: no-repeat;
     background-position: right 10px center; /* Adjust position as needed */
   }

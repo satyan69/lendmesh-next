@@ -51,7 +51,7 @@ export async function submitContactForm(formData: FormData) {
 
     return { success: true }
   } catch (error) {
-    // console.error('Error submitting form:', error)
+    console.error('Error submitting form:', error)
     return { success: false, error: 'Failed to submit the form. Please try again.' }
   }
 }

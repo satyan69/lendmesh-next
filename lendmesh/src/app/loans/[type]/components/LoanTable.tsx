@@ -40,6 +40,8 @@ export default function LoanTable({
         src={`/images/brands/bank/${href}.png`} 
         alt={`${href}`} 
         className="h-10 w-20"
+        width={80} // Specify the width in pixels
+        height={40} // Specify the height in pixels
         onError={(e) => {
           e.currentTarget.onerror = null; // Prevents looping
           e.currentTarget.src = '/images/default_bank.svg';

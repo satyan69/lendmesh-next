@@ -102,6 +102,12 @@ export default function LoanDetail({
 
     return formatCellValue(loan[key], unit)
   }
+  if (loading) {
+    return <p className="text-center p-4">Loading loan details...</p>;
+  }
+  if (!Array.isArray(detail) || detail.length === 0) {
+    return <p className="text-center p-4">No data available for this loan.</p>;
+  }
   return (
     <>
       <div className="flex font-semibold text-sm bg-medium-blue border-gray py-3 px-5 rounded-tl-[8px] rounded-tr-[8px]">

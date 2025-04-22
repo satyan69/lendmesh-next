@@ -1,11 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-// import blog from "../assets/img/blog/blog.png";
-import blog1 from "../assets/img/blog/blog_1.png";
-import blog2 from "../assets/img/blog/blog_2.png";
-import blog3 from "../assets/img/blog/blog_3.png";
-
 export default function BlogPage() {
   return (
     <>
@@ -117,9 +112,11 @@ export default function BlogPage() {
             <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
               <Image
                 className="w-full object-cover"
-                src={blog1}
+                src={'/images/blog/blog_1.png'}
                 alt="Credit Card Loan"
                 priority
+                width={100}
+                height={200}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-blue-900">
@@ -144,9 +141,11 @@ export default function BlogPage() {
             <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
               <Image
                 className="w-full object-cover"
-                src={blog2}
+                src={'/images/blog/blog_2.png'}
                 alt="Credit Card Loan"
                 priority
+                width={100}
+                height={200}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-blue-900">
@@ -171,9 +170,11 @@ export default function BlogPage() {
             <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
               <Image
                 className="w-full object-cover"
-                src={blog3}
+                src={'/images/blog/blog_3.png'}
                 alt="Credit Card Loan"
                 priority
+                width={100}
+                height={200}
               />
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-blue-900">

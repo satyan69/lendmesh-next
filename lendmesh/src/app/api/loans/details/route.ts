@@ -25,7 +25,7 @@ export async function GET(request: Request) {
   };
   
   if (!financeType && loanType) {
-    financeType = defaultFinance[loanType] || "";
+    financeType = defaultFinance[loanType as keyof typeof defaultFinance] || "";
   }
 
   let url = `${BASE_URL}/${loanType}/${creditUnionId}`
@@ -48,6 +48,7 @@ export async function GET(request: Request) {
     // console.log('data', data)
     return NextResponse.json(data)
   } catch (error) {
+    console.log('error', error);
     return NextResponse.json({ error: 'Failed to fetch loan data' }, { status: 500 })
   }
 }

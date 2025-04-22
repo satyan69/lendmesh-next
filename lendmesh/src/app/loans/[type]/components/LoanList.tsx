@@ -62,6 +62,9 @@ export default function LoanList({
   };
     const columnMappings = loanData[loanType as keyof typeof loanData]?.column_mappings;
     const tabsMappings = loanData[loanType as keyof typeof loanData]?.tabs;
+    if (loading) {
+      return <p className="text-center p-4">Loading loan details...</p>;
+    }
   return (
     <>
     {tabsMappings.map((tab: any) => (

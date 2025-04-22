@@ -1,8 +1,6 @@
-import "./Footer.scss";
 import Image from "next/image";
-import facebook from "./../../app/assets/img/icons/facebook_icon.svg";
-import twitter from "./../../app/assets/img/icons/twitter_icon.svg";
-import instagram from "./../../app/assets/img/icons/instagram_icon.svg";
+import "./Footer.scss";
+
 export default function Footer() {
   return (
     <>
@@ -72,9 +70,11 @@ export default function Footer() {
                 >
                   <Image
                     className="dark:invert w-[70%] hover:text-white"
-                    src={facebook}
+                    src={'/images/icons/facebook_icon.svg'}
                     alt="Facebook"
                     priority
+                    width={50}
+                    height={50}
                   />
                 </a>
               </div>
@@ -87,9 +87,11 @@ export default function Footer() {
                 >
                   <Image
                     className="dark:invert w-[40%] hover:text-white"
-                    src={twitter}
+                    src={'/images/icons/twitter_icon.svg'}
                     alt="twitter"
                     priority
+                    width={50}
+                    height={50}
                   />
                 </a>
               </div>
@@ -102,9 +104,11 @@ export default function Footer() {
                 >
                   <Image
                     className="dark:invert w-[60%] hover:text-white"
-                    src={instagram}
+                    src={'/images/icons/instagram_icon.svg'}
                     alt="instagram"
                     priority
+                    width={50}
+                    height={50}
                   />
                 </a>
               </div>

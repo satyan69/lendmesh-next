@@ -1,49 +1,70 @@
+const testimonials = [
+  {
+    name: "Lorem ipsum",
+    title: "IT Employee",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut amet, consectetur",
+    rating: 5,
+    active: false,
+  },
+  {
+    name: "Lorem ipsum",
+    title: "IT Employee",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut amet, consectetur",
+    rating: 5,
+    active: true,
+  },
+  {
+    name: "Lorem ipsum",
+    title: "IT Employee",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut amet, consectetur",
+    rating: 5,
+    active: false,
+  },
+];
+
 export default function Clients() {
   return (
-    <>
-      <h2 className="text-4xl font-bold text-center mb-12">
-        Our Trusted Clients
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* <!-- Card 1 --> */}
-        <div className="bg-white shadow-lg rounded-lg p-8 transition transform hover:scale-105">
-          <div className="flex justify-center mb-4">
-            <span className="text-[#4296EA] text-2xl"></span>
+    <div className="bg-gray-50 py-10 px-4 text-center">
+      <h2 className="text-3xl font-bold text-[#001E41] mb-10">Our Trusted Clients</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {testimonials.map((t, index) => (
+          <div
+            key={index}
+            className={`p-6 rounded-xl shadow-md transition ${
+              t.active
+                ? "bg-[#2D80F2] text-white"
+                : "bg-white text-[#001E41]"
+            }`}
+          >
+            <div className="flex justify-center mb-4">
+              {[...Array(t.rating)].map((_, i) => (
+                <span
+                  key={i}
+                  className={`text-xl ${
+                    t.active ? "text-[#66E396]" : "text-[#2D80F2]"
+                  }`}
+                >
+                  ★
+                </span>
+              ))}
+            </div>
+            <p className="text-lg italic mb-4">“{t.quote}”</p>
+            <p className={`font-bold ${t.active ? "text-[#66E396]" : ""}`}>
+              {t.name}
+            </p>
+            <p
+              className={`text-sm ${
+                t.active ? "text-white" : "text-[#2D80F2]"
+              }`}
+            >
+              {t.title}
+            </p>
           </div>
-          <p className="text-lg mb-6">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut amet, consectetur”
-          </p>
-          <h4 className="font-bold">Lorem ipsum</h4>
-          <p className="text-[#4296EA]">IT Employee</p>
-        </div>
-
-        {/* <!-- Active Card --> */}
-        <div className="bg-blue-500 shadow-lg rounded-lg p-8 transform scale-105 transition">
-          <div className="flex justify-center mb-4">
-            <span className="text-[#6BE3A2] text-2xl">★ ★ ★ ★ ★</span>
-          </div>
-          <p className="text-white text-lg mb-6">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut amet, consectetur”
-          </p>
-          <h4 className="text-[#6BE3A2] font-bold">Lorem ipsum</h4>
-          <p className="text-white">IT Employee</p>
-        </div>
-
-        {/* <!-- Card 3 --> */}
-        <div className="bg-white shadow-lg rounded-lg p-8 transition transform hover:scale-105">
-          <div className="flex justify-center mb-4">
-            <span className="text-[#4296EA] text-2xl">★ ★ ★ ★ ★</span>
-          </div>
-          <p className="text-lg mb-6">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut amet, consectetur”
-          </p>
-          <h4 className="font-bold">Lorem ipsum</h4>
-          <p className="text-[#4296EA]">IT Employee</p>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }

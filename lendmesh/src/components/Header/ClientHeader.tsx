@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import "./Header.scss";
 
-export default function ClientHeader({ menuData, logo }: { menuData: any[], logo: any }) {
+export default function ClientHeader({ menuData }: { menuData: any[] }) {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenus, setOpenSubmenus] = useState<Record<string, boolean>>({});
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +29,7 @@ export default function ClientHeader({ menuData, logo }: { menuData: any[], logo
       <div className="lg:container md:mx-auto md:mx-0 w-full md:max-w-full flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2 py-4 lm-nav-brand">
-          <Image className="dark:invert" src={logo} alt="lendmesh logo" priority />
+          <Image className="dark:invert" src={'/images/logo.svg'} width={150} height={30} alt="lendmesh logo" priority />
         </Link>
 
         {/* Desktop nav */}

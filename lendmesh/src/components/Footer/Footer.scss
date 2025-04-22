@@ -1,6 +1,6 @@
 @use "./../../scss/variable.scss";
 .lm-join-now {
-  background-image: url("../../app/assets/img/join_now_bg.png");
+  background-image: url("/images/join_now_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,7 +11,7 @@
 }
 .footer-logo {
   height: 250px;
-  background-image: url("../../app/assets/img/logo_footer.svg");
+  background-image: url("/images/logo_footer.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

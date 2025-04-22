@@ -38,7 +38,7 @@ export async function subscribeToNewsletter(formData: FormData) {
 
     return { success: true }
   } catch (error) {
-    // console.error('Error subscribing to newsletter:', error)
+    console.error('Error subscribing to newsletter:', error)
     return { success: false, error: 'Failed to subscribe to the newsletter. Please try again.' }
   }
 }

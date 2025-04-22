@@ -1,18 +1,12 @@
-import Image from "next/image";
 import "./page.scss";
-
-import personalLoan from "./assets/img/offerings/personal_loan.svg";
-import vehicleLoan from "./assets/img/offerings/vehicle_loan.svg";
-import studentLoan from "./assets/img/offerings/student_loan.svg";
-import mortagageLoan from "./assets/img/offerings/mortagage_loan.svg";
-import homeEquityLoan from "./assets/img/offerings/home_equity_loan.svg";
-import creditCardLoan from "./assets/img/offerings/credit_card_loan.svg";
-
 // Loan Solutions
 
 import Clients from "../components/Clients";
 import HomeAbout from "@/components/HomeAbout";
 import HomeBlogs from "@/components/HomeBlogs";
+import HomeOfferings from "@/components/HomeOfferings";
+import Link from "next/link";
+import AboutLendMesh from "@/components/AboutLendMesh";
 
 export default function Home() {
   return (
@@ -49,108 +43,7 @@ export default function Home() {
         </div>
 
         {/* <!-- Heading --> */}
-        <div className="home-banner-part-2 py-16 px-6">
-          <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center mt-30 mb-12">
-              Our Offerings
-            </h2>
-
-            {/* <!-- Container --> */}
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
-              {/* <!-- Personal Loan --> */}
-              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-                <Image
-                  className="dark:invert"
-                  src={personalLoan}
-                  alt="Personal Loan"
-                  priority
-                />
-                <h3 className="text-2xl font-bold mb-4">Personal Loan</h3>
-                <p className="text-gray-100 hover:text-white">
-                  Whether it's home improvements, debt consolidation, or
-                  unexpected expenses, we connect you with affordable personal
-                  loan options with no hidden fees.
-                </p>
-              </div>
-
-              {/* <!-- Vehicle Loan --> */}
-              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-                <Image
-                  className="dark:invert"
-                  src={vehicleLoan}
-                  alt="Vehicle Loan"
-                  priority
-                />
-                <h3 className="text-2xl font-bold mb-4">Vehicle Loan</h3>
-                <p className="text-gray-100 hover:text-white">
-                  New, used, or refinancing, we find you the best auto loan
-                  rates from trusted lenders, so you can save more.
-                </p>
-              </div>
-
-              {/* <!-- Student Loan --> */}
-              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-                <Image
-                  className="dark:invert"
-                  src={studentLoan}
-                  alt="Student Loan"
-                  priority
-                />
-                <h3 className="text-2xl font-bold mb-4">Student Loan</h3>
-                <p className="text-gray-100 hover:text-white">
-                  Find the best student loan options for college or refinancing,
-                  with lower rates and flexible repayment plans.
-                </p>
-              </div>
-
-              {/* <!-- Mortgage Loan --> */}
-              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-                <Image
-                  className="dark:invert"
-                  src={mortagageLoan}
-                  alt="Mortagage Loan"
-                  priority
-                />
-                <h3 className="text-2xl font-bold mb-4">Mortgage Loan</h3>
-                <p className="text-gray-100 hover:text-white">
-                  Whether you're a first-time homebuyer or refinancing, we help
-                  you find the lowest mortgage rates from top lenders.
-                </p>
-              </div>
-
-              {/* <!-- Home Equity Loan --> */}
-              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
-                <Image
-                  className="dark:invert"
-                  src={homeEquityLoan}
-                  alt="Home Equity Loan"
-                  priority
-                />
-                <h3 className="text-2xl font-bold mb-4">Home Equity Loan</h3>
-                <p className="text-gray-100 hover:text-white">
-                  Access funds for major expenses or investments with low-rate
-                  home equity loans and HELOCs.
-                </p>
-              </div>
-
-              {/* <!-- Credit Card Loan --> */}
-              <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-103 transition">
-                <Image
-                  className="dark:invert"
-                  src={creditCardLoan}
-                  alt="Credit Card Loan"
-                  priority
-                />
-                <h3 className="text-2xl font-bold mb-4">Credit Card Loan</h3>
-                <p className="text-gray-100 hover:text-white">
-                  Enjoy flexible credit options with competitive rates, perfect
-                  for your everyday expenses.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+       <HomeOfferings />
         <div className="home-banner-part-3 py-16 px-6"></div>
       </div>
 
@@ -176,7 +69,7 @@ export default function Home() {
             <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
               <h3 className="text-2xl font-bold">All inquires are free</h3>
               <p className="mt-4 leading-relaxed">
-                No obligations, no charge - that's the Lendmesh way. We strive
+                No obligations, no charge - that&apos;s the Lendmesh way. We strive
                 to match homebuyers with top lenders, and you take it from
                 there.
               </p>
@@ -188,7 +81,7 @@ export default function Home() {
                 Will Not Affect Your Credit
               </h3>
               <p className="mt-4 leading-relaxed">
-                You worked hard to build your credit score, we'll work hard to
+                You worked hard to build your credit score, we&apos;ll work hard to
                 protect it. Your mortgage inquiry here on our platform will not
                 affect your rating.
               </p>
@@ -233,35 +126,24 @@ export default function Home() {
             {/* <!-- Home Affordability --> */}
             <div className="flex flex-col items-center justify-start p-8 bg-gray-50 rounded-lg shadow-md home_affordability">
               <h2 className="text-2xl font-bold mb-8">Home Affordability</h2>
-              {/* <Image
-              className="dark:invert"
-              src={homeAffordability}
-              alt="Personal Loan"
-              priority
-            /> */}
-              <a
-                href="#"
+              <Link
+                href="/calculator/home-affordability"
                 className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
               >
                 Calculate
-              </a>
+              </Link>
             </div>
 
             {/* <!-- Mortgage Calculator --> */}
             <div className="flex flex-col items-center justify-start p-8 bg-blue-900 text-white rounded-lg shadow-md mortgage_calculator">
               <h2 className="text-2xl font-bold mb-8">Mortgage Calculator</h2>
-              {/* <Image
-              className="dark:invert"
-              src={mortgageCalculator}
-              alt="Mortgage Calculator"
-              priority
-            /> */}
-              <a
-                href="#"
+              
+              <Link
+                href="/calculator/mortgage-calculator"
                 className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
               >
                 Calculate
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -313,45 +195,7 @@ export default function Home() {
             </div>
 
             {/* <!-- Right Section --> */}
-            <div className="space-y-4">
-              {/* <!-- FAQ 1 --> */}
-              <div className="border-b pb-4">
-                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                  What is LendMesh?
-                  <span className="text-xl">-</span>
-                </h4>
-                <p className="text-gray-700 mt-2">
-                  LendMesh is a loan comparison platform that connects borrowers
-                  with trusted credit unions and lenders across the USA. We help
-                  you find the best loan offers with the lowest interest
-                  rates—all in one place, 100% free.
-                </p>
-              </div>
-
-              {/* <!-- FAQ 2 --> */}
-              <div className="border-b pb-4">
-                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                  How does LendMesh work?
-                  <span className="text-xl">+</span>
-                </h4>
-              </div>
-
-              {/* <!-- FAQ 3 --> */}
-              <div className="border-b pb-4">
-                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                  Does LendMesh provide loans directly?
-                  <span className="text-xl">+</span>
-                </h4>
-              </div>
-
-              {/* <!-- FAQ 4 --> */}
-              <>
-                <h4 className="text-lg font-bold text-[#4296EA] cursor-pointer flex justify-between">
-                  Is LendMesh free to use?
-                  <span className="text-xl">+</span>
-                </h4>
-              </>
-            </div>
+            <AboutLendMesh  />
           </div>
         </div>
       </section>
