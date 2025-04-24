@@ -25,3 +25,9 @@ body {
   color: var(--foreground);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
+
+@media screen and (max-width: 375px) { 
+  body {
+    /* font-size: 90%; */
+  }
+}

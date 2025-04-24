@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         {/* <!-- Heading --> */}
-       <HomeOfferings />
+        <HomeOfferings />
         <div className="home-banner-part-3 py-16 px-6"></div>
       </div>
 
@@ -69,9 +69,9 @@ export default function Home() {
             <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
               <h3 className="text-2xl font-bold">All inquires are free</h3>
               <p className="mt-4 leading-relaxed">
-                No obligations, no charge - that&apos;s the Lendmesh way. We strive
-                to match homebuyers with top lenders, and you take it from
-                there.
+                No obligations, no charge - that&apos;s the Lendmesh way. We
+                strive to match homebuyers with top lenders, and you take it
+                from there.
               </p>
             </div>
 
@@ -81,9 +81,9 @@ export default function Home() {
                 Will Not Affect Your Credit
               </h3>
               <p className="mt-4 leading-relaxed">
-                You worked hard to build your credit score, we&apos;ll work hard to
-                protect it. Your mortgage inquiry here on our platform will not
-                affect your rating.
+                You worked hard to build your credit score, we&apos;ll work hard
+                to protect it. Your mortgage inquiry here on our platform will
+                not affect your rating.
               </p>
             </div>
 
@@ -109,11 +109,11 @@ export default function Home() {
        **
        **/}
       {/*  loan solution! */}
-      <section className="bg-white text-center py-12 px-6">
+      <section className="bg-white text-center pt-12 px-4">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
           {/* <!-- Heading --> */}
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Unlock your potential with the <br /> perfect loan solution!
+            Unlock your potential with the perfect loan solution!
           </h1>
 
           <p className="text-lg max-w-3xl mx-auto mb-12">
@@ -137,7 +137,7 @@ export default function Home() {
             {/* <!-- Mortgage Calculator --> */}
             <div className="flex flex-col items-center justify-start p-8 bg-blue-900 text-white rounded-lg shadow-md mortgage_calculator">
               <h2 className="text-2xl font-bold mb-8">Mortgage Calculator</h2>
-              
+
               <Link
                 href="/calculator/mortgage-calculator"
                 className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
@@ -154,12 +154,13 @@ export default function Home() {
        **
        **
        **/}
-      {/* Bank & Credit Union */}
-      <section className="py-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
+      {/* Bank & Credit Union - Blogs */}
+      <section className="pb-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-          <h2 className="text-4xl font-bold text-center pb-12">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center pb-12 blogs-title-one">
             Bank & Credit Union
           </h2>
+          <HomeBlogs />
         </div>
       </section>
       {/*
@@ -168,15 +169,9 @@ export default function Home() {
        **
        **
        **/}
-      {/* Blogs */}
-      <section className="py-16 px-4 md:px-10 lg:px-20">
-        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-          <HomeBlogs />
-        </div>
-      </section>
 
       {/* Any Questions? */}
-      <section className="bg-white py-16 px-4 md:px-10 lg:px-20 home_any_questions">
+      <section className="py-16 px-4 md:px-10 lg:px-20 home_any_questions">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* <!-- Left Section --> */}
@@ -195,16 +190,17 @@ export default function Home() {
             </div>
 
             {/* <!-- Right Section --> */}
-            <AboutLendMesh  />
+            <AboutLendMesh />
           </div>
+          
         </div>
       </section>
       {/*
        **
        **
        **/}
-      {/* Our Trusted Clients */}
-      <section className="bg-gray-100 py-16 px-4 md:px-10 lg:px-20">
+
+      <section className="pb-16 px-4 md:px-10 lg:px-20 home-clients">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
           <Clients />
         </div>
