@@ -1,5 +1,7 @@
 import Image from "next/image";
 import "./Footer.scss";
+import menuData from "../Header/menuData";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -121,31 +123,13 @@ export default function Footer() {
             <>
               <h3 className="font-bold text-xl">Loans</h3>
               <ul className="space-y-2">
-                <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
-                    Personal Loans
-                  </a>
+                {menuData[1]?.submenu?.map((menuItem, index) => (
+                <li key={index}>
+                  <Link href={menuItem.path ?? "#"} className="hover:text-[#6BE3A2] transition">
+                  {menuItem.title}
+                  </Link>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
-                    Vehicle Loans
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
-                    Student Loans
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
-                    Mortgage Loans
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
-                    Home Equity Loans
-                  </a>
-                </li>
+                ))}
               </ul>
             </>
 
@@ -154,19 +138,24 @@ export default function Footer() {
               <h3 className="font-bold text-xl">Discover</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
+                  <Link href="/about" className="hover:text-[#6BE3A2] transition">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
+                  <Link href="/blog" className="hover:text-[#6BE3A2] transition">
                     Blogs
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-[#6BE3A2] transition">
-                    Calculator
-                  </a>
+                  <Link href="/calculator/home-affordability" className="hover:text-[#6BE3A2] transition">
+                  Home Affordability
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/calculator/mortgage-calculator" className="hover:text-[#6BE3A2] transition">
+                  Mortgage Calculator
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="hover:text-[#6BE3A2] transition">
