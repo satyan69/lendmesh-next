@@ -16,9 +16,9 @@ const AboutPage = () => {
     <>
       <section className="bg-[#002144] page-banner loans-banner">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
-          <h1 className="mt-6 text-4xl sm:text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mt-6 font-bold">
             Welcome to LendMesh
-          </h1>
+          </h2>
           <p className="mt-8 text-l sm:text-xl mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore.
@@ -30,7 +30,7 @@ const AboutPage = () => {
           <div className="bg-white rounded-lg px-6 py-6 lg:px-10 mb-4">
             <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center">
               {/* <!-- Title Section --> */}
-              <h2 className="text-4xl sm:text-5xl font-bold">About Lendmesh</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">About Lendmesh</h2>
 
               <p className="text-lg mt-4 max-w-3xl mx-auto leading-relaxed">
                 At LendMesh, we believe finding the right loan should be simple,
@@ -119,7 +119,7 @@ const AboutPage = () => {
               </div>
 
               <div className="w-2/3 p-6 bg-white">
-                <h2 className="text-4xl sm:text-5xl font-bold text-[#001B45]">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001B45]">
                   Jithendra Mane
                 </h2>
                 <p className="text-blue-500 text-sm mb-4">Founder</p>
@@ -144,7 +144,7 @@ const AboutPage = () => {
       </section>
       <section className="bg-[#001B45] py-16">
         <div className="container mx-auto px-5 md:px-10 lg:px-20">
-          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
             How It All Started
           </h2>
           <div className="grid grid-cols-3 gap-12">
@@ -214,7 +214,7 @@ const AboutPage = () => {
       </section>
       <section className="bg-[#4296EA] py-16">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Lorem ipsum dolor sit amet, elit sed do eiusmod tempor
           </h2>
           <p className="text-l sm:text-xl leading-relaxed">
@@ -231,7 +231,7 @@ const AboutPage = () => {
       {/* Bank & Credit Union */}
       <section className="py-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center pb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center pb-12">
             Bank & Credit Union
           </h2>
         </div>
@@ -240,7 +240,7 @@ const AboutPage = () => {
       {/* Choose From Our Offerings */}
       <section className="bg-white py-16 px-4 md:px-10 lg:px-20 home_any_questions">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center pb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center pb-12">
             Choose From Our Offerings
           </h2>
           <div className="about-loans-cards-wrap grid grid-cols-1 sm:grid-cols-2 gap-8 border-b border-rgba(27, 52, 147, 0.3) pb-8 mb-8">

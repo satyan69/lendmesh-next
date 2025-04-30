@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HomeBlogs() {
   return (
     <>
-      <h2 className="text-4xl sm:text-5xl font-bold text-center blogs-title-two">Blogs</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center blogs-title-two">Blogs</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 blogs">
         {/* <!-- Blog 1 --> */}

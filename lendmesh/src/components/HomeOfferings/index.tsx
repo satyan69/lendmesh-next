@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function HomeOfferings() {
     return (<div className="home-banner-part-2 py-16 px-6">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mt-30 mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-30 mb-12">
             Our Offerings
           </h2>
 
@@ -24,7 +24,7 @@ export default function HomeOfferings() {
                 priority
               />
               </Link>
-              <h3 className="text-2xl font-bold mb-4">Personal Loan</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Personal Loan</h3>
               <p className="text-gray-100 hover:text-white">
                 Whether it&apos;s home improvements, debt consolidation, or
                 unexpected expenses, we connect you with affordable personal
@@ -44,7 +44,7 @@ export default function HomeOfferings() {
                 priority
               />
               </Link>
-              <h3 className="text-2xl font-bold mb-4">Vehicle Loan</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Vehicle Loan</h3>
               <p className="text-gray-100 hover:text-white">
                 New, used, or refinancing, we find you the best auto loan
                 rates from trusted lenders, so you can save more.
@@ -63,7 +63,7 @@ export default function HomeOfferings() {
                 priority
               />
               </Link>
-              <h3 className="text-2xl font-bold mb-4">Student Loan</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Student Loan</h3>
               <p className="text-gray-100 hover:text-white">
                 Find the best student loan options for college or refinancing,
                 with lower rates and flexible repayment plans.
@@ -82,7 +82,7 @@ export default function HomeOfferings() {
                 priority
               />
               </Link>
-              <h3 className="text-2xl font-bold mb-4">Mortgage Loan</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Mortgage Loan</h3>
               <p className="text-gray-100 hover:text-white">
                 Whether you&apos;re a first-time homebuyer or refinancing, we help
                 you find the lowest mortgage rates from top lenders.
@@ -101,7 +101,7 @@ export default function HomeOfferings() {
                 priority
               />
                </Link>
-              <h3 className="text-2xl font-bold mb-4">Home Equity Loan</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Home Equity Loan</h3>
               <p className="text-gray-100 hover:text-white">
                 Access funds for major expenses or investments with low-rate
                 home equity loans and HELOCs.
@@ -118,7 +118,7 @@ export default function HomeOfferings() {
                 height={100}
                 priority
               />
-              <h3 className="text-2xl font-bold mb-4">Credit Card Loan</h3>
+              <h3 className="text-xl md:text-2xl font-bold mb-4">Credit Card Loan</h3>
               <p className="text-gray-100 hover:text-white">
                 Enjoy flexible credit options with competitive rates, perfect
                 for your everyday expenses.

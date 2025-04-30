@@ -1,3 +1,12 @@
+/*
+*
+*
+*
+* Home Banner 
+*
+*
+*
+*/
 .home-banner {
   // background-image: url("./images/home/Banner_lendmesh_1920.png");
   background-repeat: no-repeat;
@@ -15,19 +24,54 @@
     // min-height: 300px;
   }
 }
+
 .home-banner-part-1 {
-  background-image: url("/images/home/1.jpg");
+  background-image: url("/images/home/banner/1920/top.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  h2 {
+    padding-top: 20vh;
+  }
+  @media screen and (max-width: 1280px) {
+    background-image: url("/images/home/banner/1240/top.png");
+    background-size: auto;
+    h2 {
+      padding-top: 100px;
+    }
+  }
+  @media (max-width: 768px) {
+    background-image: url("/images/home/banner/768/top.png");
+    background-size: auto;
+    h2 {
+      padding-top: 275px;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    background-image: url("/images/home/banner/375/top.png");
+    background-size: auto;
+    h2 {
+      padding-top: 275px;
+    }
+  }
+}
+
+.home-banner-part-2 {
+  background-image: url("/images/home/banner/1920/bottom.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 
-.home-banner-part-2 {
-  background-image: url("/images/home/2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
+/*
+*
+*
+*
+* End of Home Banner 
+*
+*
+*
+*/
 
 .home-about-lendmesh {
   background-image: url("/images/home/section_1/1920.png");
@@ -53,7 +97,7 @@
   @media screen and (max-width: 400px) {
     padding-top: 220px;
   }
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 340px) {
     padding-top: 200px;
   }
 }
@@ -106,7 +150,7 @@
     padding-top: 50px;
     margin-top: 50px;
     background-image: url("/images/home/blogs/1240.png");
-    
+
     .blogs-title-one {
       padding-top: 0;
     }
@@ -154,11 +198,9 @@
   }
   @media screen and (max-width: 768px) {
     background-image: url("/images/home/questions/768.png");
-   
   }
   @media screen and (max-width: 375px) {
     background-image: url("/images/home/questions/375.png");
-   
   }
 }
 .home-clients {

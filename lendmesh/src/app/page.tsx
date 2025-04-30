@@ -7,6 +7,7 @@ import HomeBlogs from "@/components/HomeBlogs";
 import HomeOfferings from "@/components/HomeOfferings";
 import Link from "next/link";
 import AboutLendMesh from "@/components/AboutLendMesh";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,7 +16,6 @@ export default function Home() {
        **
        **
        **/}
-      {/* About Lendmesh */}
       {/* TODO - BG - from-blue-900 to-blue-700*/}
       <div className="bg-gradient-to-b from-blue-900 to-blue-700 text-white home-banner">
         <div className="home-banner-part-1 py-16 px-6">
@@ -23,10 +23,10 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* <!-- Personal Loan --> */}
               <div className="flex flex-col items-start py-8">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 pt-30 leading-normal">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-normal">
                   Find the Right Loan, Effortlessly with LendMesh
                 </h2>
-                <p className="text-gray-100 hover:text-white mb-5 text-xl">
+                <p className="text-gray-100 hover:text-white mb-5 text-l md:text-xl">
                   LendMesh makes it simple, transparent and absolutely free,
                   helping you compare the best loan offers from top credit
                   unions and lenders across the USA
@@ -41,7 +41,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* <!-- Heading --> */}
         <HomeOfferings />
         <div className="home-banner-part-3 py-16 px-6"></div>
@@ -67,7 +66,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* <!-- Card 1 --> */}
             <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-              <h3 className="text-2xl font-bold">All inquires are free</h3>
+              <figure className="mb-6 flex justify-center">
+                <Image
+                  className="dark:invert"
+                  src={"/images/about/gift.svg"}
+                  alt="Credit Card Loan"
+                  width={51}
+                  height={51}
+                  priority
+                />
+              </figure>
+              <h3 className="text-xl md:text-2xl font-bold">All inquires are free</h3>
               <p className="mt-4 leading-relaxed">
                 No obligations, no charge - that&apos;s the Lendmesh way. We
                 strive to match homebuyers with top lenders, and you take it
@@ -77,7 +86,17 @@ export default function Home() {
 
             {/* <!-- Card 2 --> */}
             <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-              <h3 className="text-2xl font-bold">
+              <figure className="mb-6 flex justify-center">
+                <Image
+                  className="dark:invert"
+                  src={"/images/about/rating-circled.svg"}
+                  alt="Credit Card Loan"
+                  width={51}
+                  height={51}
+                  priority
+                />
+              </figure>
+              <h3 className="text-xl md:text-2xl font-bold">
                 Will Not Affect Your Credit
               </h3>
               <p className="mt-4 leading-relaxed">
@@ -89,7 +108,17 @@ export default function Home() {
 
             {/* <!-- Card 3 --> */}
             <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
-              <h3 className="text-2xl font-bold">
+              <figure className="mb-6 flex justify-center">
+                <Image
+                  className="dark:invert"
+                  src={"/images/about/lock.svg"}
+                  alt="Credit Card Loan"
+                  width={51}
+                  height={51}
+                  priority
+                />
+              </figure>
+              <h3 className="text-xl md:text-2xl font-bold">
                 Your Information Is Safe With Us
               </h3>
               <p className="mt-4 leading-relaxed">
@@ -112,9 +141,9 @@ export default function Home() {
       <section className="bg-white text-center pt-12 px-4">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
           {/* <!-- Heading --> */}
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Unlock your potential with the perfect loan solution!
-          </h1>
+          </h2>
 
           <p className="text-lg max-w-3xl mx-auto mb-12">
             Buying a home is a big decision—our Mortgage Calculator and Home
@@ -157,7 +186,7 @@ export default function Home() {
       {/* Bank & Credit Union - Blogs */}
       <section className="pb-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
-          <h2 className="text-4xl sm:text-5xl font-bold text-center pb-12 blogs-title-one">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center pb-12 blogs-title-one">
             Bank & Credit Union
           </h2>
           <HomeBlogs />
@@ -176,10 +205,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* <!-- Left Section --> */}
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold text-[#4296EA]">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4296EA]">
                 Any Questions?
               </h2>
-              <h3 className="text-3xl font-bold">We got you</h3>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">We got you</h2>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut.
@@ -192,7 +221,6 @@ export default function Home() {
             {/* <!-- Right Section --> */}
             <AboutLendMesh />
           </div>
-          
         </div>
       </section>
       {/*

@@ -2,7 +2,7 @@ export default function HomeAbout() {
     return (
         <>
         {/* <!-- Title Section --> */}
-        <h2 className="text-4xl font-bold">About Lendmesh</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">About Lendmesh</h2>
 
         <p className="text-lg mt-4 max-w-3xl mx-auto leading-relaxed">
           At LendMesh, we believe finding the right loan should be simple,
