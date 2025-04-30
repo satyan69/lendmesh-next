@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./loans.scss"; // Import your CSS file here
 import LoanList from './components/LoanList';
+import menuData from "@/components/Header/menuData";
 type Props = {
   params: Promise<{ type: string }>;
 };
@@ -79,16 +80,17 @@ async function getInitialLoans(loanType: string) {
 export default async function LoansPage({ params }: { params: any }) {
   const { type } = await params;
   const initialData = await getInitialLoans(type);
+  const pageName = menuData[1]?.submenu?.find((item) => item.path === `/loans/${type}`)?.title || "Loans";
+  const description = menuData[1]?.submenu?.find((item) => item.path === `/loans/${type}`)?.description || "Explore various loan options tailored for your needs.";
   // console.log('initialData', initialData)
   return (
     <>
        {/* Banner Section */}
       <div className="bg-[#002144] page-banner loans-banner">
         <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mt-6 font-bold">Personal Loan</h2>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl mt-6 mt-6 font-bold">{pageName}</h1>
           <p className="mt-8 text-l sm:text-xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore.
+            {description}
           </p>
         </section>
       </div>

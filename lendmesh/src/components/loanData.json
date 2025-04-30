@@ -38,7 +38,8 @@
           "key": "lender_id",
           "unit": "",
           "id":1,
-          "width": "25%"
+          "width": "25%",
+          "sortable": true
         },
         {
           "name": "APR",
@@ -46,7 +47,8 @@
           "delimiter": " - ",
           "unit": "%",
           "id":2,
-          "width": "25%"
+          "width": "25%",
+          "sortable": true
         },
         {
           "name": "Term",
@@ -54,14 +56,16 @@
           "delimiter": " - ",
           "unit": "Yrs",
           "id":3,
-          "width": "25%"
+          "width": "25%",
+          "sortable": true
         },
         {
           "name": "Link",
           "key": "url",
           "unit": "",
           "id":4,
-          "width": "20%"
+          "width": "20%",
+          "sortable": false
         }
       ],
       "tabs": [{
@@ -395,7 +399,7 @@
           "key": "url",
           "unit": "",
           "id":5,
-          "width": "20%"
+          "width": "15%"
         }
       ],
       "tabs": []

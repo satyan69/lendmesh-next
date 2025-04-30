@@ -17,6 +17,7 @@ const menuData: Menu[] = [
         title: "Personal Loans",
         path: "/loans/personal_loans",
         newTab: false,
+        description: "Personal loans are unsecured loans that can be used for various purposes, such as debt consolidation, home improvements, or unexpected expenses. They typically have fixed interest rates and flexible repayment terms."
       },
       {
         id: 22,
