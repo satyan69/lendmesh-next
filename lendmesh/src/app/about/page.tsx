@@ -15,7 +15,7 @@ const AboutPage = () => {
   return (
     <>
       <section className="bg-[#002144] page-banner about-banner">
-        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center text-white text-center py-16 px-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mt-6 font-bold">
             Welcome to LendMesh
           </h2>
@@ -27,7 +27,7 @@ const AboutPage = () => {
       </section>
       <section className="loans-section-1-wrapper">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16">
-          <div className="bg-white rounded-lg px-6 py-6 lg:px-10 mb-4">
+          <div className="bg-white rounded-lg px-5 py-5 lg:px-10 mb-4">
             <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center">
               {/* <!-- Title Section --> */}
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
@@ -175,77 +175,83 @@ const AboutPage = () => {
         </div>
       </section>
       <section className="bg-[#001B45] py-16">
-        <div className="container mx-auto px-5 md:px-10 lg:px-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
-            How It All Started
-          </h2>
-          <div className="grid grid-cols-3 gap-12">
-            <div className="mb-4">
-              <span className="text-[#4296EA] font-bold text-xl">01</span>
-              <h6 className="text-white text-lg font-bold mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </h6>
-              <p className="text-white text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
+          <div className="px-5">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-12 text-center">
+              How It All Started
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
+              <div className="mb-4 order-2 md:order-1">
+                <span className="text-[#4296EA] font-bold text-xl flex justify-center md:justify-start">
+                  01
+                </span>
+                <h6 className="text-white text-lg font-bold mb-2 flex justify-center md:justify-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h6>
+                <p className="text-white text-sm flex justify-center md:justify-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+              <div className="col-span-2 flex justify-center md:justify-start items-center order-1 md:order-2">
+                <Image
+                  className="dark:invert"
+                  src={"/images/about/about_1.svg"}
+                  alt="Personal Loan"
+                  priority
+                  width={496}
+                  height={496}
+                />
+              </div>
             </div>
-            <div className="col-span-2">
-              <Image
-                className="dark:invert"
-                src={"/images/about/about_1.svg"}
-                alt="Personal Loan"
-                priority
-                width={496}
-                height={496}
-              />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-12">
+              <div className="col-span-2 gap-12 justify-items-end items-end">
+                <Image
+                  className="dark:invert"
+                  src={"/images/about/about_2.svg"}
+                  alt="Personal Loan"
+                  priority
+                  width={496}
+                  height={496}
+                />
+              </div>
+              <div className="mb-4">
+                <span className="text-[#4296EA] font-bold text-xl flex justify-center md:justify-start">
+                  02
+                </span>
+                <h6 className="text-white text-lg font-bold mb-2 flex justify-center md:justify-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h6>
+                <p className="text-white text-sm flex justify-center md:justify-start">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="grid grid-cols-3">
-            <div className="col-span-2 gap-12 justify-items-end items-end">
-              <Image
-                className="dark:invert"
-                src={"/images/about/about_2.svg"}
-                alt="Personal Loan"
-                priority
-                width={496}
-                height={496}
-              />
-            </div>
-            <div className="mb-4">
-              <span className="text-[#4296EA] font-bold text-xl">02</span>
-              <h6 className="text-white text-lg font-bold mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </h6>
-              <p className="text-white text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 gap-12 text-center justify-items-center items-center">
-            <div className="mb-4">
-              <Image
-                className="dark:invert"
-                src={"/images/about/about_3.svg"}
-                alt="Personal Loan"
-                priority
-                width={480}
-                height={422}
-              />
-            </div>
-            <div className="mb-4">
-              <span className="text-[#4296EA] font-bold text-xl">03</span>
-              <h6 className="text-white text-lg font-bold mb-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </h6>
-              <p className="text-white text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+            <div className="grid grid-cols-1 gap-12 text-center justify-items-center items-center">
+              <div className="mb-4">
+                <Image
+                  className="dark:invert"
+                  src={"/images/about/about_3.svg"}
+                  alt="Personal Loan"
+                  priority
+                  width={480}
+                  height={422}
+                />
+              </div>
+              <div className="mb-4">
+                <span className="text-[#4296EA] font-bold text-xl">03</span>
+                <h6 className="text-white text-lg font-bold mb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h6>
+                <p className="text-white text-sm">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section className="bg-[#4296EA] py-16">
-        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
+        <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-5">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Lorem ipsum dolor sit amet, elit sed do eiusmod tempor
           </h2>

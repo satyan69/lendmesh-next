@@ -14,7 +14,7 @@ export default function BlogPage() {
         </section>
       </div>
       <div className="loans-section-1-wrapper">
-        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-6 lg:px-0">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-5 lg:px-0">
           <div className="flex flex-wrap gap-4 mb-6 pl-0 lg:pl-3">
             <button className="px-4 py-2 rounded-[8px] bg-blue-900 text-white font-medium">
               All
@@ -70,7 +70,7 @@ export default function BlogPage() {
       </div>
 
       <div className="loans-section-1-wrapper">
-        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-6 lg:px-0">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-5 lg:px-0">
           <div className="py-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             {/* <!-- Newsletter Section --> */}
             <div className="pl-0 lg:pl-3">
@@ -106,7 +106,7 @@ export default function BlogPage() {
         </section>
       </div>
       <div className="loans-section-1-wrapper">
-        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-6 lg:px-0 mb-20">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-5 lg:px-0 mb-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 blogs">
             {/* <!-- Blog 1 --> */}
             <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">

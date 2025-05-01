@@ -23,7 +23,7 @@ export default function ContactPage() {
         </section>
       </div>
       <div className="loans-section-1-wrapper">
-        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-6 lg:px-0">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full pt-16 px-5 lg:px-0">
           <div className="pb-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             {/* <!-- Contact Form --> */}
             <Contact />

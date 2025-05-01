@@ -1,14 +1,215 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import "./community.scss";
 
 export default function CommunityPage() {
-    return (
-      <>
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-          <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-            <h1>Community Page</h1>
-          </main>
+  return (
+    <>
+      <div className="bg-[#002144] page-banner-1">
+        <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-5">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mt-6 font-bold">
+            Subscription
+          </h2>
+          <p className="mt-8 text-l sm:text-xl mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </section>
+      </div>
+      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center text-white text-center py-16 px-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 w-full">
+          {/* Card (Subscribed) */}
+          <div className="community-tile rounded-[8px] p-6 text-center flex flex-col h-full">
+            <div className="flex justify-center mb-4">
+              <div className="rounded">
+                <Link scroll={false} href="/loans/personal_loans">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/offerings/personal_loan.svg"}
+                    alt="Personal Loan"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </Link>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold text-[#0C2340] mb-4">
+              Personal Loan
+            </h3>
+            <div className="flex justify-center">
+              <div className="relative">
+                <button className="bg-[#4296EA] text-white text-sm px-6 py-2 rounded-full pr-10 cursor-pointer shadow">
+                  Subscribed
+                </button>
+                <span className="absolute right-[2px] top-[2px] w-8 h-8 bg-white border-2 border-[#4296EA] rounded-full flex items-center justify-center">
+                  <Image
+                    src={"/images/icons/subscribed.svg"}
+                    alt="Subscribed"
+                    className="h-4 w-4"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card (Unsubscribed) */}
+          <div className="community-tile rounded-[8px] p-6 text-center flex flex-col h-full">
+            <div className="flex justify-center mb-4">
+              <div className="p-2 rounded">
+                <Link scroll={false} href="/loans/vehicle_loans">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/offerings/vehicle_loan.svg"}
+                    alt="Vehicle Loan"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </Link>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+              Vehicle Loan
+            </h3>
+            <div className="flex justify-center items-center space-x-2">
+              <div className="relative">
+                <button className="bg-gray-100 text-[#6B7280] text-sm px-6 py-2 rounded-full pl-10 shadow">
+                  Unsubscribed
+                </button>
+                <span className="absolute left-[2px] top-[2px] w-8 h-8 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow">
+                  <Image
+                    src={"/images/icons/unsubscribed.svg"}
+                    alt="Unsubscribed"
+                    className="h-4 w-4"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Repeat similar blocks for other cards */}
+          <div className="community-tile rounded-[8px] p-6 text-center flex flex-col h-full">
+            <div className="flex justify-center mb-4">
+              <div className="p-2 rounded">
+                <Link scroll={false} href="/loans/student_loans">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/offerings/student_loan.svg"}
+                    alt="Student Loan"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </Link>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+              Student Loan
+            </h3>
+            <div className="flex justify-center items-center space-x-2">
+              <div className="relative">
+                <button className="bg-gray-100 text-[#6B7280] text-sm px-6 py-2 rounded-full pl-10 shadow">
+                  Unsubscribed
+                </button>
+                <span className="absolute left-[2px] top-[2px] w-8 h-8 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow">
+                  <Image
+                    src={"/images/icons/unsubscribed.svg"}
+                    alt="Unsubscribed"
+                    className="h-4 w-4"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Mortgage Loan */}
+          <div className="community-tile rounded-[8px] p-6 text-center flex flex-col h-full">
+            <div className="flex justify-center mb-4">
+              <div className="p-2 rounded">
+                <Link scroll={false} href="/loans/mortgage_loans">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/offerings/mortagage_loan.svg"}
+                    alt="Mortgage Loan"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </Link>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+              Mortgage Loan
+            </h3>
+            <div className="flex justify-center items-center space-x-2">
+              <div className="relative">
+                <button className="bg-gray-100 text-[#6B7280] text-sm px-6 py-2 rounded-full pl-10 shadow">
+                  Unsubscribed
+                </button>
+                <span className="absolute left-[2px] top-[2px] w-8 h-8 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow">
+                  <Image
+                    src={"/images/icons/unsubscribed.svg"}
+                    alt="Unsubscribed"
+                    className="h-4 w-4"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Home Equity Loan */}
+          <div className="community-tile rounded-[8px] p-6 text-center flex flex-col h-full">
+            <div className="flex justify-center mb-4">
+              <div className="p-2 rounded">
+                <Link scroll={false} href="/loans/home_equity_loans">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/offerings/home_equity_loan.png"}
+                    alt="Home Equity Loan"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </Link>
+              </div>
+            </div>
+            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+              Home Equity Loan
+            </h3>
+            <div className="flex justify-center items-center space-x-2">
+              <div className="relative">
+                <button className="bg-gray-100 text-[#6B7280] text-sm px-6 py-2 rounded-full pl-10 shadow">
+                  Unsubscribed
+                </button>
+                <span className="absolute left-[2px] top-[2px] w-8 h-8 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow">
+                  <Image
+                    src={"/images/icons/unsubscribed.svg"}
+                    alt="Unsubscribed"
+                    className="h-4 w-4"
+                    width={100}
+                    height={100}
+                    priority
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </>
-    );
-  }
-  
+      </section>
+    </>
+  );
+}
