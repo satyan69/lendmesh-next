@@ -17,7 +17,7 @@ export default function HomeBlogs() {
             priority
           />
           <div className="py-6">
-            <h3 className="text-2xl font-bold text-blue-900">
+            <h3 className="text-2xl font-bold">
               Lorem ipsum dolor sit amet, elit
             </h3>
             <p className="mt-2">
@@ -46,7 +46,7 @@ export default function HomeBlogs() {
             priority
           />
           <div className="p-6">
-            <h3 className="text-2xl font-bold text-blue-900">
+            <h3 className="text-2xl font-bold">
               Lorem ipsum dolor sit amet, elit
             </h3>
             <p className="mt-2">
@@ -75,7 +75,7 @@ export default function HomeBlogs() {
             priority
           />
           <div className="p-6">
-            <h3 className="text-2xl font-bold text-blue-900">
+            <h3 className="text-2xl font-bold">
               Lorem ipsum dolor sit amet, elit
             </h3>
             <p className="mt-2">
@@ -95,7 +95,7 @@ export default function HomeBlogs() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <button className="bg-[#6BE3A2] text-[#002144] px-6 py-3 rounded-md shadow hover:bg-green-500 transition">
+        <button className="bg-[#6BE3A2] text-[#002144] px-6 py-3 rounded-[8px] shadow hover:bg-[#6BE3A2] transition cursor-pointer">
           More Blogs
         </button>
       </div>

@@ -86,7 +86,7 @@ export default async function LoansPage({ params }: { params: any }) {
   return (
     <>
        {/* Banner Section */}
-      <div className="bg-[#002144] page-banner loans-banner">
+      <div className="bg-[#002144] page-banner-1">
         <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
           <h1 className="text-3xl md:text-4xl lg:text-5xl mt-6 mt-6 font-bold">{pageName}</h1>
           <p className="mt-8 text-l sm:text-xl mx-auto">

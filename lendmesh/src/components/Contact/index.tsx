@@ -11,7 +11,7 @@ function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className="bg-blue-900 text-white px-6 py-2 rounded-md font-semibold hover:bg-blue-800 transition"
+      className="bg-blue-900 text-white px-6 py-2 rounded-[8px] font-semibold hover:bg-blue-800 transition"
     >
       {pending ? "Submitting..." : "Submit"}
     </button>
@@ -63,7 +63,7 @@ export default function Contact() {
   };
   return (
     <div className="bg-gray-100 p-6 rounded-lg">
-      <h2 className="text-2xl font-bold text-blue-900 mb-6">
+      <h2 className="text-2xl font-bold mb-6">
         Get In Touch With Us
       </h2>
       {message && (
@@ -77,26 +77,26 @@ export default function Contact() {
             type="text"
             name="name"
             placeholder="Name"
-            className="w-1/2 px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
+            className="w-1/2 px-4 py-2 rounded-[8px] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
-            className="w-1/2 px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
+            className="w-1/2 px-4 py-2 rounded-[8px] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
           />
         </div>
         <input
           type="text"
           name="contact"
           placeholder="Subject"
-          className="w-full px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
+          className="w-full px-4 py-2 rounded-[8px] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
         />
         <textarea
           rows={4}
           name="message"
           placeholder="Message"
-          className="w-full px-4 py-2 rounded-md bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
+          className="w-full px-4 py-2 rounded-[8px] bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
         ></textarea>
         <div className="w-full px-4">
           <div className="mb-8">

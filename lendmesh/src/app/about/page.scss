@@ -1,3 +1,14 @@
+.about-banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-image: url("/images/about/about_banner.png");
+  // http://localhost:3000/assets/images/about/about_banner.png
+  background-size: cover;
+  background-position: center;
+}
 .about-loans-cards-wrap {
   border-bottom: 2px solid #e3dfdf;
 }

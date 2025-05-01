@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <div className="bg-[#002144] page-banner loans-banner">
+      <div className="bg-[#002144] page-banner-1">
         <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mt-6 font-bold">
             Connect with us!
@@ -30,7 +30,7 @@ export default function ContactPage() {
 
             {/* <!-- Contact Info --> */}
             <div>
-              <h2 className="text-2xl font-bold text-blue-900 mb-4">
+              <h2 className="text-2xl font-bold mb-4">
                 Contact Details
               </h2>
               <p className="text-gray-600 mb-6">
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
               <hr className="mb-4 border-[#4296EA]" />
               <div className="flex items-center justify-between gap-4 mb-6">
-                <h3 className="text-blue-900 font-bold">Social Media</h3>
+                <h3 className="font-bold">Social Media</h3>
                 <div className="flex gap-4">
                   <span className="h-[40px] w-[40px] rounded-full bg-gray-200"></span>
                   <span className="h-[40px] w-[40px] rounded-full bg-gray-200"></span>

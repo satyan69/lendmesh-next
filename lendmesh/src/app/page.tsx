@@ -157,7 +157,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold mb-8">Home Affordability</h2>
               <Link
                 href="/calculator/home-affordability"
-                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
+                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-[8px] transition"
               >
                 Calculate
               </Link>
@@ -169,7 +169,7 @@ export default function Home() {
 
               <Link
                 href="/calculator/mortgage-calculator"
-                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-md transition"
+                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-[8px] transition"
               >
                 Calculate
               </Link>
@@ -184,7 +184,7 @@ export default function Home() {
        **
        **/}
       {/* Bank & Credit Union - Blogs */}
-      <section className="pb-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
+      <section className="pb-20 lg:pb-36 px-4 md:px-10 lg:px-20 home_bank_credit_union">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center pb-12 blogs-title-one">
             Bank & Credit Union
@@ -213,7 +213,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut.
               </p>
-              <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
+              <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer">
                 More info
               </button>
             </div>

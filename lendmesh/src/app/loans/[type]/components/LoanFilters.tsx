@@ -30,9 +30,9 @@ export default function LoanFilters({
             <div key={filter.key} className="flex-1 min-w-[150px]">
               <label className="block text-sm font-semibold">{filter.name}</label>
               {filter.type === "input" ? (
-                <input type="text" className="mt-1 p-2 border rounded-md w-full" {...commonProps} />
+                <input type="text" className="mt-1 p-2 border rounded-[8px] w-full" {...commonProps} />
               ) : (
-                <select className="mt-1 p-2 border rounded-md w-full" {...commonProps}>
+                <select className="mt-1 p-2 border rounded-[8px] w-full" {...commonProps}>
                   {filter.value.map((option: any) => (
                     <option key={option.key} value={option.key}>
                       {option.name}

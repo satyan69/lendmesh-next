@@ -8,14 +8,29 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  height: 70vh;
+  min-height: 300px;
+  max-height: 800px;
+  @media (max-width: 768px) {
+    height: 60vh;
+  }
+  @media screen and (max-width: 340px) {
+    height: 50vh;
+  }
+}
+.page-banner-1 {
+  background-color: #002144;
+  // background-image: url("/images/home/section_1/1920.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
   height: 50vh;
   min-height: 300px;
   max-height: 800px;
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 768px) {
     height: 40vh;
   }
-  @media screen and (max-width: 600px) {
-    height: 35vh;
-    min-height: 300px;
+  @media screen and (max-width: 340px) {
+    height: 50vh;
   }
 }

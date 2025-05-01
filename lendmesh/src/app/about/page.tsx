@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <section className="bg-[#002144] page-banner loans-banner">
+      <section className="bg-[#002144] page-banner about-banner">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center  text-white text-center py-16 px-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl mt-6 font-bold">
             Welcome to LendMesh
@@ -30,7 +30,9 @@ const AboutPage = () => {
           <div className="bg-white rounded-lg px-6 py-6 lg:px-10 mb-4">
             <div className="bg-white py-16 px-4 md:px-10 lg:px-20 text-center">
               {/* <!-- Title Section --> */}
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">About Lendmesh</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                About Lendmesh
+              </h2>
 
               <p className="text-lg mt-4 max-w-3xl mx-auto leading-relaxed">
                 At LendMesh, we believe finding the right loan should be simple,
@@ -61,7 +63,7 @@ const AboutPage = () => {
 
               {/* <!-- Button Section --> */}
               {/* <div className="mt-10">
-                <button typeof="button" className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer">
+                <button typeof="button" className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer">
                   Know more
                 </button>
               </div> */}
@@ -74,7 +76,17 @@ const AboutPage = () => {
           <div className="bg-white py-16 px-5 text-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* <!-- Card 1 --> */}
-              <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+              <div className="border border-[#4296EA] rounded-[8px] p-8 text-center shadow-sm hover:shadow-md transition">
+                <figure className="mb-6 flex justify-center">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/about/gift.svg"}
+                    alt="Credit Card Loan"
+                    width={51}
+                    height={51}
+                    priority
+                  />
+                </figure>
                 <h3 className="text-2xl font-bold">All inquires are free</h3>
                 <p className="mt-4 leading-relaxed">
                   No obligations, no charge - that&apos;s the Lendmesh way. We
@@ -84,7 +96,17 @@ const AboutPage = () => {
               </div>
 
               {/* <!-- Card 2 --> */}
-              <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+              <div className="border border-[#4296EA] rounded-[8px] p-8 text-center shadow-sm hover:shadow-md transition">
+                <figure className="mb-6 flex justify-center">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/about/rating-circled.svg"}
+                    alt="Credit Card Loan"
+                    width={51}
+                    height={51}
+                    priority
+                  />
+                </figure>
                 <h3 className="text-2xl font-bold">
                   Will Not Affect Your Credit
                 </h3>
@@ -96,7 +118,17 @@ const AboutPage = () => {
               </div>
 
               {/* <!-- Card 3 --> */}
-              <div className="border border-[#4296EA] rounded-lg p-8 text-center shadow-sm hover:shadow-md transition">
+              <div className="border border-[#4296EA] rounded-[8px] p-8 text-center shadow-sm hover:shadow-md transition">
+                <figure className="mb-6 flex justify-center">
+                  <Image
+                    className="dark:invert"
+                    src={"/images/about/lock.svg"}
+                    alt="Credit Card Loan"
+                    width={51}
+                    height={51}
+                    priority
+                  />
+                </figure>
                 <h3 className="text-2xl font-bold">
                   Your Information Is Safe With Us
                 </h3>
@@ -112,7 +144,7 @@ const AboutPage = () => {
           {/*  */}
           {/*  */}
           <div className="px-5">
-            <div className="border-2 border-blue-400 flex rounded overflow-hidden shadow-md my-16">
+            <div className="flex rounded overflow-hidden my-16">
               {/* <!-- Left dark section (can be an image or solid color) --> */}
               <div className="w-1/3 bg-[#001B45]">
                 {/* <!-- Optional: Add image here --> */}
@@ -122,8 +154,8 @@ const AboutPage = () => {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#001B45]">
                   Jithendra Mane
                 </h2>
-                <p className="text-blue-500 text-sm mb-4">Founder</p>
-                <p className="text-gray-700 text-sm mb-4">
+                <p className="text-[#4296EA] text-l mb-4">Founder</p>
+                <p className="mb-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
                   <br />
@@ -258,7 +290,7 @@ const AboutPage = () => {
                   />
                 </Link>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Personal Loan
               </h3>
               <p className="text-gray-700 mb-4">
@@ -267,7 +299,7 @@ const AboutPage = () => {
               </p>
               <button
                 typeof="button"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Know more
               </button>
@@ -287,7 +319,7 @@ const AboutPage = () => {
                   />
                 </Link>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Vehical Loan
               </h3>
               <p className="text-gray-700 mb-4">
@@ -296,7 +328,7 @@ const AboutPage = () => {
               </p>
               <button
                 typeof="button"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Know more
               </button>
@@ -317,7 +349,7 @@ const AboutPage = () => {
                   />
                 </Link>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Student Loan
               </h3>
               <p className="text-gray-700 mb-4">
@@ -326,7 +358,7 @@ const AboutPage = () => {
               </p>
               <button
                 typeof="button"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Know more
               </button>
@@ -346,7 +378,7 @@ const AboutPage = () => {
                   />
                 </Link>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Mortgage Loan
               </h3>
               <p className="text-gray-700 mb-4">
@@ -355,7 +387,7 @@ const AboutPage = () => {
               </p>
               <button
                 typeof="button"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Know more
               </button>
@@ -368,7 +400,7 @@ const AboutPage = () => {
                 <Link scroll={false} href="/loans/home_equity_loans">
                   <Image
                     className="dark:invert"
-                    src={"/images/offerings/home_equity_loan.svg"}
+                    src={"/images/offerings/home_equity_loan.png"}
                     alt="Home Equity Loan"
                     width={100}
                     height={100}
@@ -376,7 +408,7 @@ const AboutPage = () => {
                   />
                 </Link>
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Home Equity Loan
               </h3>
               <p className="text-gray-700 mb-4">
@@ -385,7 +417,7 @@ const AboutPage = () => {
               </p>
               <button
                 typeof="button"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Know more
               </button>
@@ -403,7 +435,7 @@ const AboutPage = () => {
                   priority
                 />
               </div>
-              <h3 className="text-xl font-bold text-blue-900 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold mb-4">
                 Credit Card Loan
               </h3>
               <p className="text-gray-700 mb-4">
@@ -412,7 +444,7 @@ const AboutPage = () => {
               </p>
               <button
                 typeof="button"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-md hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Know more
               </button>

@@ -94,7 +94,7 @@ export default function HomeOfferings() {
             <Link scroll={false} href="/loans/home_equity_loans">
               <Image
                 className="dark:invert"
-                src={'/images/offerings/home_equity_loan.svg'}
+                src={'/images/offerings/home_equity_loan.png'}
                 alt="Home Equity Loan"
                 width={100}
                 height={100}

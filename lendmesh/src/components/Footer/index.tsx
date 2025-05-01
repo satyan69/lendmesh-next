@@ -17,9 +17,9 @@ export default function Footer() {
 
         {/* <!-- Content --> */}
         <div className="relative flex flex-col items-center justify-center h-full text-center text-white px-6">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Join Our Community
-          </h1>
+          </h2>
 
           <p className="text-lg md:text-xl mb-8 max-w-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -28,7 +28,7 @@ export default function Footer() {
 
           <a
             href="#"
-            className="bg-green-400 hover:bg-green-500 text-black font-semibold py-3 px-8 rounded-lg shadow-lg transition"
+            className="bg-[#6BE3A2] hover:bg-bg-[#6BE3A2 text-black font-semibold py-3 px-8 rounded-[8px] shadow-lg transition"
           >
             Join now
           </a>
@@ -51,11 +51,11 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Email Id"
-                  className="border border-white bg-transparent px-4 py-2 rounded-md text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white w-full"
+                  className="border border-white bg-transparent px-4 py-2 rounded-[8px] text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white w-full"
                 />
                 <button
                   type="button"
-                  className="bg-white text-blue-500 px-5 py-2 rounded-md font-semibold hover:bg-gray-100 mt-2 sm:mt-0 w-full sm:w-auto"
+                  className="bg-white text-[#4296EA] px-5 py-2 rounded-[8px] font-semibold hover:bg-gray-100 mt-2 sm:mt-0 w-full sm:w-auto cursor-pointer transition duration-300 ease-in-out"
                 >
                   Sign up
                 </button>
@@ -120,8 +120,8 @@ export default function Footer() {
           {/* <!-- Middle Section: Links (Loans, Discover, Security) --> */}
           <div className="grid grid-cols-3 gap-12">
             {/* <!-- Loans Section --> */}
-            <>
-              <h3 className="font-bold text-xl">Loans</h3>
+            <div>
+              <h3 className="font-bold text-l lg:text-xl mb-3">Loans</h3>
               <ul className="space-y-2">
                 {menuData[1]?.submenu?.map((menuItem, index) => (
                 <li key={index}>
@@ -131,11 +131,11 @@ export default function Footer() {
                 </li>
                 ))}
               </ul>
-            </>
+            </div>
 
             {/* <!-- Discover Section --> */}
-            <>
-              <h3 className="font-bold text-xl">Discover</h3>
+            <div>
+              <h3 className="font-bold text-l lg:text-xl mb-3">Discover</h3>
               <ul className="space-y-2">
                 <li>
                   <Link href="/about" className="hover:text-[#6BE3A2] transition">
@@ -163,11 +163,11 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </>
+            </div>
 
             {/* <!-- Security & Protection Section --> */}
-            <>
-              <h3 className="font-bold text-xl">Security & Protection</h3>
+            <div>
+              <h3 className="font-bold text-l lg:text-xl mb-3">Security & Protection</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="hover:text-[#6BE3A2] transition">
@@ -185,7 +185,7 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
-            </>
+            </div>
           </div>
         </div>
         {/* <!-- Right Section: Logo and Social Media --> */}
