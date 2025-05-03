@@ -91,7 +91,7 @@ export default function ClientHeader({ menuData }: { menuData: any[] }) {
 
         {/* Sign up btn */}
         <div className="hidden md:block">
-          <button className="bg-[#6BE3A2] text-white px-6 py-2 text-sm rounded-lg shadow-lg hover:bg-[#6BE3A2] transition whitespace-nowrap cursor-pointer">
+          <button className="bg-[#6BE3A2] text-white px-4 lg:px-6 py-2 text-sm rounded-[8px] shadow-lg hover:bg-[#6BE3A2] transition whitespace-nowrap cursor-pointer">
             Sign Up
           </button>
         </div>

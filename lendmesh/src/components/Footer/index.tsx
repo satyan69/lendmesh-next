@@ -45,7 +45,7 @@ export default function Footer() {
             </p> */}
             <div className="text-white p-4 flex flex-col items-center sm:items-start space-y-3 w-full max-w-sm">
               <p className="text-lg font-semibold text-center sm:text-left">
-                Sign up for daily updates
+              Subscribe for daily updates
               </p>
               <div className="flex flex-col sm:flex-row sm:space-x-2 w-full">
                 <input
@@ -57,7 +57,7 @@ export default function Footer() {
                   type="button"
                   className="bg-white text-[#4296EA] px-5 py-2 rounded-[8px] font-semibold hover:bg-gray-100 mt-2 sm:mt-0 w-full sm:w-auto cursor-pointer transition duration-300 ease-in-out"
                 >
-                  Sign up
+                  Subscribe
                 </button>
               </div>
             </div>

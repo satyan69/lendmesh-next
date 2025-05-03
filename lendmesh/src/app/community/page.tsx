@@ -17,8 +17,8 @@ export default function CommunityPage() {
           </p>
         </section>
       </div>
-      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center text-white text-center py-16 px-5">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 w-full">
+      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col items-center justify-center text-center py-16 px-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
           {/* Card (Subscribed) */}
           <div className="community-tile rounded-[8px] p-6 text-center flex flex-col h-full">
             <div className="flex justify-center mb-4">
@@ -35,7 +35,7 @@ export default function CommunityPage() {
                 </Link>
               </div>
             </div>
-            <h3 className="text-xl font-bold text-[#0C2340] mb-4">
+            <h3 className="text-xl font-bold mb-4">
               Personal Loan
             </h3>
             <div className="flex justify-center">
@@ -73,7 +73,7 @@ export default function CommunityPage() {
                 </Link>
               </div>
             </div>
-            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+            <h3 className="text-lg font-bold mb-4">
               Vehicle Loan
             </h3>
             <div className="flex justify-center items-center space-x-2">
@@ -111,7 +111,7 @@ export default function CommunityPage() {
                 </Link>
               </div>
             </div>
-            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+            <h3 className="text-lg font-bold mb-4">
               Student Loan
             </h3>
             <div className="flex justify-center items-center space-x-2">
@@ -149,7 +149,7 @@ export default function CommunityPage() {
                 </Link>
               </div>
             </div>
-            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+            <h3 className="text-lg font-bold mb-4">
               Mortgage Loan
             </h3>
             <div className="flex justify-center items-center space-x-2">
@@ -187,7 +187,7 @@ export default function CommunityPage() {
                 </Link>
               </div>
             </div>
-            <h3 className="text-lg font-bold text-[#0C2340] mb-4">
+            <h3 className="text-lg font-bold mb-4">
               Home Equity Loan
             </h3>
             <div className="flex justify-center items-center space-x-2">
