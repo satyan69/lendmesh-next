@@ -104,32 +104,20 @@
 
 .home_affordability,
 .mortgage_calculator {
-  color: #002144;
   transition: all 500ms linear;
   height: 25rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #fff;
-  background-position: center;
-  &:hover {
-    color: white;
-    background-color: #002144;
-    a {
-      background-color: #6be3a2;
-    }
-  }
+  background-position: bottom;
 }
 .home_affordability {
-  background-image: url("/images/loan_solution/home_affordability.png");
-  &:hover {
-    background-image: url("/images/loan_solution/home_affordability.png");
-  }
+  background-image: url("/images/loan_solution/home_affordability_1920.png");
 }
 .mortgage_calculator {
-  background-image: url("/images/loan_solution/mortgage_calculator.png");
-  &:hover {
-    background-image: url("/images/loan_solution/mortgage_calculator.png");
-  }
+  background-image: url("/images/loan_solution/mortgage_calculator_1920.png");
+  background-color: #002144;
+  color: white;
 }
 
 // Home Loan Solution - Blogs

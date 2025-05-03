@@ -76,7 +76,9 @@ export default function Home() {
                   priority
                 />
               </figure>
-              <h3 className="text-xl md:text-2xl font-bold">All inquires are free</h3>
+              <h3 className="text-xl md:text-2xl font-bold">
+                All inquires are free
+              </h3>
               <p className="mt-4 leading-relaxed">
                 No obligations, no charge - that&apos;s the Lendmesh way. We
                 strive to match homebuyers with top lenders, and you take it
@@ -151,25 +153,25 @@ export default function Home() {
           </p>
 
           {/* <!-- Container --> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             {/* <!-- Home Affordability --> */}
-            <div className="flex flex-col items-center justify-start p-8 bg-gray-50 rounded-lg shadow-md home_affordability">
+            <div className="flex flex-col items-center justify-start p-8 bg-gray-50 home_affordability">
               <h2 className="text-2xl font-bold mb-8">Home Affordability</h2>
               <Link
                 href="/calculator/home-affordability"
-                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-[8px] transition"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
               >
                 Calculate
               </Link>
             </div>
 
             {/* <!-- Mortgage Calculator --> */}
-            <div className="flex flex-col items-center justify-start p-8 bg-blue-900 text-white rounded-lg shadow-md mortgage_calculator">
+            <div className="flex flex-col items-center justify-start p-8 bg-blue-900 text-white mortgage_calculator">
               <h2 className="text-2xl font-bold mb-8">Mortgage Calculator</h2>
 
               <Link
                 href="/calculator/mortgage-calculator"
-                className="border-2 border-[#002144] hover:bg-[#6BE3A2] text-[#002144] py-3 px-8 rounded-[8px] transition"
+                className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[8px] font-semibold hover:bg-white hover:text-blue-900 transition"
               >
                 Calculate
               </Link>
@@ -208,7 +210,9 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4296EA]">
                 Any Questions?
               </h2>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">We got you</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+                We got you
+              </h2>
               <p className="text-gray-600">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut.
