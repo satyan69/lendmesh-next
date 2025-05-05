@@ -85,7 +85,7 @@ export default function IncomeExpenseSection({
       }
     const COLORS = ["#F4BE37", "#5388D8", "#00FFFF", "#47F437"];
     return (
-      <div className="rounded-xl p-8 shadow dark:bg-gray-dark">
+      <div className="bg-white p-6 rounded-lg shadow text-center border-gray">
         <h2 className="mb-4 text-center text-xl font-bold">Income vs Expense</h2>
         <div className="flex flex-col items-center">
           <div className="w-full max-w-xs">
