@@ -25,7 +25,8 @@ export default function LoanList({
     credit_score: "",
     sort_type: "",
     sort_by: "",
-    finance_type: ""
+    finance_type: "",
+    product: '',
   });
   const [expandedRowIndex, setExpandedRowIndex] = useState(null);
 
@@ -39,6 +40,7 @@ export default function LoanList({
       sortBy: filters.sort_by,
       sortType: filters.sort_type,
       financeType: filters.finance_type,
+      product: filters.product,
       page: newPage.toString(),
     });
 
