@@ -7,14 +7,15 @@ export async function GET(req: NextRequest) {
   const creditScore = Number(searchParams.get('creditScore')) || 780;
   const sortBy = searchParams.get('sortBy') || 'APR';
   const sortType = searchParams.get('sortType') || 'asc';
+  let product = Number(searchParams.get('product')) || '';
   const page = Number(searchParams.get('page')) || 1;
-
+  
   // Call your external API
   const url = 'https://fetch-loan-data-26212115864.us-central1.run.app/api/v1/initial';
   const updatedurl = `${url}/${loanType}`;
 console.log('updatedurl', updatedurl)
   try {
-    const response = await fetch(`${updatedurl}?zipCode=${zip}&creditScore=${creditScore}&sortBy=${sortBy}&sortType=${sortType}&page=${page}`)
+    const response = await fetch(`${updatedurl}?zipCode=${zip}&creditScore=${creditScore}&sortBy=${sortBy}&sortType=${sortType}&product=${product}&page=${page}`)
     const data = await response.json()
     // console.log('Fetched loan data:', data)
     return NextResponse.json(data)

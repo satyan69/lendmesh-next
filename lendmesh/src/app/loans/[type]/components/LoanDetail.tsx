@@ -1,7 +1,7 @@
 // LoanDetail.tsx
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Fragment } from "react";
 import loanDetails from "../../../../components/loanDetails.json";
 
 const loanDetailCache = new Map<string, any>();
@@ -11,6 +11,7 @@ interface LoanDetailRowProps {
   loanType: string;
   financeType: string;
   product: string | null | undefined;
+  index: number
 }
 
 export default function LoanDetail({
@@ -18,6 +19,7 @@ export default function LoanDetail({
   loanType,
   financeType,
   product,
+  index,
 }: LoanDetailRowProps) {
   const [detail, setDetail] = useState<any | null>(null);
   const [loading, setLoading] = useState(true);
@@ -109,7 +111,7 @@ export default function LoanDetail({
     return <p className="text-center p-4">No data available for this loan.</p>;
   }
   return (
-    <>
+    <Fragment key={index}>
       <div className="flex font-semibold text-sm bg-medium-blue border-gray py-3 px-5 rounded-tl-[8px] rounded-tr-[8px]">
       {columnMappings.map((column: any) => (
         <div key={column.id} className="w-[25%] pr-2">{column.name}</div>
@@ -125,6 +127,6 @@ export default function LoanDetail({
             </div>
           </div>
         ))}
-    </>
+    </Fragment>
   );
 }

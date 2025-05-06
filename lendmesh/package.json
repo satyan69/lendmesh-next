@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formulajs/formulajs": "^4.4.11",
     "next": "^15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-google-recaptcha": "^3.1.0",
     "react-stars": "^2.2.5",
+    "recharts": "^2.15.3",
     "swr": "^2.3.3",
     "zod": "^3.24.3"
   },

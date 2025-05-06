@@ -160,6 +160,7 @@ export default function LoanTable({
                 financeType={financeType}
                 creditUnionId={loan.credit_union_id}
                 product={loan?.product || null}
+                index={i}
               />
               <p className="py-4 px-2 text-sm">
                 <strong className="mb-2">Notes:</strong>
