@@ -7,7 +7,7 @@ export async function GET(req: NextRequest) {
   const creditScore = Number(searchParams.get('creditScore')) || 780;
   const sortBy = searchParams.get('sortBy') || 'APR';
   const sortType = searchParams.get('sortType') || 'asc';
-  let product = Number(searchParams.get('product')) || '';
+  const product = Number(searchParams.get('product')) || '';
   const page = Number(searchParams.get('page')) || 1;
   
   // Call your external API
