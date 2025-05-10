@@ -270,112 +270,6 @@ export default function HomeData() {
                   &#9432;
                 </span>
               </h3>
-
-              {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-sm">
-                <div className="flex flex-col justify-between">
-                  <label htmlFor="netMonthlyPay" className="block font-medium">
-                    Net Monthly Pay (Gross Income)
-                  </label>
-                  <input
-                    id="netMonthlyPay"
-                    type="number"
-                    value="8751"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label
-                    htmlFor="totalMonthlyDebts"
-                    className="block font-medium"
-                  >
-                    Total Monthly Debts
-                  </label>
-                  <input
-                    id="totalMonthlyDebts"
-                    type="number"
-                    value="4"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label
-                    htmlFor="totalHousingExpense"
-                    className="block font-medium"
-                  >
-                    Total Housing Expense without Rent
-                  </label>
-                  <input
-                    id="totalHousingExpense"
-                    type="number"
-                    value="3199"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label
-                    htmlFor="newHomeExpenses"
-                    className="block font-medium"
-                  >
-                    New Home Expenses
-                  </label>
-                  <input
-                    id="newHomeExpenses"
-                    type="number"
-                    value="717"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label
-                    htmlFor="totalClosingCost"
-                    className="block font-medium"
-                  >
-                    Total Closing Cost
-                  </label>
-                  <input
-                    id="totalClosingCost"
-                    type="number"
-                    value="10000"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label
-                    htmlFor="annualInterestRate"
-                    className="block font-medium"
-                  >
-                    Annual Interest Rate %
-                  </label>
-                  <input
-                    id="annualInterestRate"
-                    type="number"
-                    value="6.25"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label htmlFor="termOfMortgage" className="block font-medium">
-                    Term of Mortgage (years)
-                  </label>
-                  <input
-                    id="termOfMortgage"
-                    type="number"
-                    value="30"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-                <div className="flex flex-col justify-between">
-                  <label htmlFor="availableFunds" className="block font-medium">
-                    Available Funds
-                  </label>
-                  <input
-                    id="availableFunds"
-                    type="number"
-                    value="92000"
-                    className="w-full border rounded px-3 py-2 mt-1"
-                  />
-                </div>
-              </div> */}
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-sm">
                 {Object.entries(AffordabilityLabels).map(([key, label]) => (
                   <div key={key} className="flex flex-col justify-between">
@@ -404,88 +298,14 @@ export default function HomeData() {
               {/* <!-- Charts Section --> */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* <!-- Home Affordability --> */}
-                {/* <div className="bg-white p-6 rounded-lg shadow text-center border-gray">
-                  <h3 className="text-xl font-bold mb-4">Home Affordability</h3>
-                  <div className="w-40 h-40 mx-auto bg-yellow-300 rounded-full mb-4 flex items-center justify-center">
-                    [Pie]
-                  </div>
-                  <div className="flex justify-center items-center gap-2 bg-gray-100 rounded p-1">
-                    <span>
-                      Max Loan Amount <strong>$460,834</strong>
-                    </span>{" "}
-                    +
-                    <span>
-                      Down Payment <strong>$92,000</strong>
-                    </span>{" "}
-                    =
-                    <span className="px-3 py-1 bg-[#002144] font-semibold text-white rounded">
-                      Total $552,834
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap justify-center mt-4 text-xs gap-4">
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-yellow-500 inline-block"></span>{" "}
-                      Max Loan
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>{" "}
-                      Down Payment
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-green-500 inline-block"></span>{" "}
-                      Term: 30 yrs
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-sky-500 inline-block"></span>{" "}
-                      Interest: 6.25%
-                    </span>
-                  </div>
-                </div> */}
                 <AffordabilitySection
                     title="Home Affordability"
                     chartSeries={monthlyChartSeries}
-                    totalPayment={affordabilityCalculations[tableIndex]?.totalPayment}
+                    // totalPayment={affordabilityCalculations[tableIndex]?.totalPayment}
                     calculations={affordabilityCalculations[tableIndex]}
-                />
+                /> 
 
                 {/* <!-- Income vs Expense --> */}
-                {/* <div className="bg-white p-6 rounded-lg shadow text-center border-gray">
-                  <h3 className="text-xl font-bold mb-4">Income vs Expense</h3>
-                  <div className="w-40 h-40 mx-auto bg-blue-400 rounded-full mb-4 flex items-center justify-center text-white">
-                    [Pie]
-                  </div>
-                  <div className="flex justify-center items-center gap-2 bg-gray-100 rounded p-1">
-                    <span>
-                      Gross Income <strong>$8,751</strong>
-                    </span>{" "}
-                    -
-                    <span>
-                      Debts <strong>$4</strong>
-                    </span>{" "}
-                    =
-                    <span className="px-3 py-1 rounded font-semibold bg-[#002144] font-semibold text-white rounded">
-                      Net Pay $8,747
-                    </span>
-                  </div>
-                  <div className="flex flex-wrap justify-center mt-4 text-xs gap-4">
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-yellow-500 inline-block"></span>{" "}
-                      Mortgage $2,899
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-indigo-500 inline-block"></span>{" "}
-                      Housing $3,199
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-cyan-400 inline-block"></span>{" "}
-                      Expense $717
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <span className="w-2 h-2 rounded-full bg-lime-500 inline-block"></span>{" "}
-                      Leftover $1,932
-                    </span>
-                  </div>
-                </div> */}
                 <IncomeExpenseSection
               chartSeries={monthlyIncomeChartSeries}
               netMonthlyPay={

@@ -39,54 +39,37 @@ export default function IncomeExpenseSection({
         netMonthlyPay,
       }: IncomeBreakdownProps) {
         return (
-          <div className="my-4 w-full">
-            <div className="w-full rounded-lg bg-[#f1eff2] p-4 dark:bg-primary">
-              <div className="flex flex-col items-stretch justify-between gap-4 md:flex-row">
-                <div className="flex flex-1 flex-col justify-center">
-                  <p className="text-muted-foreground w-full text-xs font-medium">
-                    Gross Income
-                  </p>
-                  <p className="font-semibold">
-                    {new Intl.NumberFormat("en-US", {
+            <>
+            <span>
+                      Gross Income <strong>{new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                       maximumFractionDigits: 0,
-                    }).format(totalGrossIncome)}
-                  </p>
-                </div>
-                <div className="flex items-center justify-center text-xl md:px-2">-</div>
-                <div className="flex flex-1 flex-col justify-center">
-                  <p className="text-muted-foreground text-xs font-medium">
-                    Monthly Debts
-                  </p>
-                  <p className="font-semibold">
-                    {new Intl.NumberFormat("en-US", {
+                    }).format(totalGrossIncome)}</strong>
+                    </span>{" "}
+                    -
+                    <span>
+                      Debts <strong>{new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                       maximumFractionDigits: 0,
-                    }).format(monthlyGrossPay)}
-                  </p>
-                </div>
-                <div className="flex items-center justify-center text-xl md:px-2">=</div>
-                <div className="flex flex-1 flex-col justify-center rounded-lg bg-[#1a2542] p-3 text-white">
-                  <p className="text-xs font-medium">Net Pay</p>
-                  <p className="text-md font-semibold">
-                    {new Intl.NumberFormat("en-US", {
+                    }).format(monthlyGrossPay)}</strong>
+                    </span>{" "}
+                    =
+                    <span className="px-3 py-1 rounded font-semibold bg-[#002144] font-semibold text-white rounded">
+                      Net Pay {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                       maximumFractionDigits: 0,
                     }).format(netMonthlyPay)}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                    </span>
+            </>
         );
       }
     const COLORS = ["#F4BE37", "#5388D8", "#00FFFF", "#47F437"];
     return (
       <div className="bg-white p-6 rounded-lg shadow text-center border-gray">
-        <h2 className="mb-4 text-center text-xl font-bold">Income vs Expense</h2>
+        <h3 className="text-xl font-bold mb-4">Income vs Expense</h3>
         <div className="flex flex-col items-center">
           <div className="w-full max-w-xs">
             <ResponsiveContainer width="100%" height={300}>
@@ -111,14 +94,14 @@ export default function IncomeExpenseSection({
               </PieChart>
             </ResponsiveContainer>
           </div>
-          <div className="mt-4 text-center">
+          <div className="flex justify-center items-center gap-2 bg-gray-100 rounded p-1">
             <IncomeBreakdownCard
               totalGrossIncome={totalCalculationState.totalGrossIncome}
               monthlyGrossPay={totalCalculationState.totalMonthlyDebts}
               netMonthlyPay={totalCalculationState.netMonthlyPay - totalCalculationState.totalMonthlyDebts}
             />
           </div>
-          <div className="mt-4 grid w-full grid-cols-2 gap-4">
+          <div className="flex flex-wrap justify-center mt-4 text-xs gap-4">
             <AffordabilityCardDescription
               color="#F4BE37"
               title="Monthly Mortgage (EMI)"

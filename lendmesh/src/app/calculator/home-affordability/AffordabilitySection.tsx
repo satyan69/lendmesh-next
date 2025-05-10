@@ -11,7 +11,7 @@ import { AffordabilityCardDescription } from "./AffordabilityCardDescription";
 interface AffordabilitySectionProps {
   title: string;
   chartSeries: { value: number; label: string; amount: number }[];
-  totalPayment: number;
+  // totalPayment: number;
   calculations: {
     maxLoanAmount: number;
     downPayment: number;
@@ -25,76 +25,56 @@ interface AffordabilitySectionProps {
 export default function AffordabilitySection({
     title,
     chartSeries,
-    totalPayment,
+    // totalPayment,
     calculations,
   }: AffordabilitySectionProps) {
     const COLORS = ["#F4BE37", "#5388D8", "#47F437", "#00FFFF"];
     interface SumCardProps {
         maxLoanAmount: number;
         downPayment: number;
-        interestRate: number;
+        // interestRate: number;
       }
       
       function SumCard({
         maxLoanAmount,
         downPayment,
-        interestRate,
+        // interestRate,
       }: SumCardProps) {
         const total = maxLoanAmount + downPayment;
       
         return (
-          <div className="my-4 space-y-2">
-            <div className="text-center">
-              {/* <span className="text-2xl font-bold">{interestRate.toFixed(2)}%</span> */}
-            </div>
-            <div className="rounded-lg bg-[#f1eff2] p-4 dark:bg-primary">
-              <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-                <div className="flex-1">
-                  <p className="text-muted-foreground text-xs font-medium">
-                    Max Loan Amount
-                  </p>
-                  <p className="font-semibold">
-                    {new Intl.NumberFormat("en-US", {
+          <>
+             <span>
+                      Max Loan Amount <strong>{new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                       maximumFractionDigits: 0,
-                    }).format(maxLoanAmount)}
-                  </p>
-                </div>
-                <div className="text-muted-foreground text-xl">+</div>
-                <div className="flex-1">
-                  <p className="text-muted-foreground text-xs font-medium">
-                    Down Payment
-                  </p>
-                  <p className="font-semibold">
-                    {new Intl.NumberFormat("en-US", {
+                    }).format(maxLoanAmount)}</strong>
+                    </span>{" "}
+                    +
+                    <span>
+                      Down Payment <strong>{new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                       maximumFractionDigits: 0,
-                    }).format(downPayment)}
-                  </p>
-                </div>
-                <div className="text-muted-foreground text-xl">=</div>
-                <div className="flex-1 rounded-lg bg-[#1a2542] p-3 text-white">
-                  <p className="text-sm font-medium">Total</p>
-                  <p className="text-md font-semibold">
-                    {new Intl.NumberFormat("en-US", {
+                    }).format(downPayment)}</strong>
+                    </span>{" "}
+                    =
+                    <span className="px-3 py-1 bg-[#002144] font-semibold text-white rounded">
+                      Total {new Intl.NumberFormat("en-US", {
                       style: "currency",
                       currency: "USD",
                       maximumFractionDigits: 0,
                     }).format(total)}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+                    </span>
+          </>
         );
       }
 
   
     return (
       <div className="bg-white p-6 rounded-lg shadow text-center border-gray">
-        <h2 className="text-xl font-bold mb-4">{title}</h2>
+        <h3 className="text-xl font-bold mb-4">{title}</h3>
         <div className="flex flex-col items-center">
           <div className="w-full max-w-xs">
             <ResponsiveContainer width="100%" height={300}>
@@ -120,16 +100,14 @@ export default function AffordabilitySection({
             </ResponsiveContainer>
           </div>
   
-          <div className="mt-4 text-center">
-            {/* <p className="text-sm">Max Home Value</p>
-            <h3 className="text-2xl font-bold">{formatCurrency(totalPayment)}</h3> */}
+          <div className="flex justify-center items-center gap-2 bg-gray-100 rounded p-1">
             <SumCard
               maxLoanAmount={calculations?.maxLoanAmount}
               downPayment={calculations?.downPayment}
-              interestRate={calculations?.mortgageAnnualRate}
+              // interestRate={calculations?.mortgageAnnualRate}
             />
           </div>
-          <div className="mt-4 grid w-full grid-cols-2 gap-4">
+          <div className="flex flex-wrap justify-center mt-4 text-xs gap-4">
             <AffordabilityCardDescription
               color="#F4BE37"
               title="Max Loan Amount"
@@ -141,7 +119,7 @@ export default function AffordabilitySection({
               title="Down Payment"
               value={calculations?.downPayment}
               unit="money"
-              extraRate={calculations?.downPaymentRate}
+              // extraRate={calculations?.downPaymentRate}
             />
             <AffordabilityCardDescription
               color="#47F437"
@@ -158,5 +136,6 @@ export default function AffordabilitySection({
           </div>
         </div>
       </div>
+      
     );
   }

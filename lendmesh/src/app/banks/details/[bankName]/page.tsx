@@ -1,9 +1,4 @@
-export default function BankDetailsPage({
-  params,
-}: {
-  params: { bankName: string };
-}) {
-  const { bankName } = params;
+export default function BankDetailsPage() {
 
   return (
     <>
