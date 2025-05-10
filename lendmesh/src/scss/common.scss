@@ -20,17 +20,23 @@ button {
 }
 .page-banner-1 {
   background-color: #002144;
-  // background-image: url("/images/home/section_1/1920.png");
+  background-image: url("/images/mesh/1920.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
+  background-size: 100% 100%;
+  background-position: 0 -130px;
   height: 50vh;
   min-height: 300px;
   max-height: 800px;
+  @media (max-width: 1280px) {
+    background-position: 0 -50px;
+    background-image: url("/images/mesh/1280.png");
+  }
   @media (max-width: 768px) {
+    background-image: url("/images/mesh/768.png");
     height: 40vh;
   }
   @media screen and (max-width: 340px) {
+    background-image: url("/images/mesh/375.png");
     height: 50vh;
   }
 }

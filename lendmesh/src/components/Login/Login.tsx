@@ -88,7 +88,7 @@ const LoginPopup: React.FC<LoginPopupProps> = ({ hideLogin }) => {
             </div>
 
             {/* Sign in button */}
-            <button className="w-full bg-[#6BE3A2] text-white px-4 lg:px-6 py-2 text-sm rounded-[8px] shadow-lg hover:bg-[#6BE3A2] transition whitespace-nowrap cursor-pointer">
+            <button className="w-full bg-[#6BE3A2] px-4 lg:px-6 py-2 text-sm rounded-[8px] shadow-lg hover:bg-[#6BE3A2] transition whitespace-nowrap cursor-pointer">
               Sign In
             </button>
 
@@ -218,7 +218,7 @@ const LoginPopup: React.FC<LoginPopupProps> = ({ hideLogin }) => {
             </div>
 
             {/* Sign in button */}
-            <button className="w-full bg-[#6BE3A2] text-white px-4 lg:px-6 py-2 text-sm rounded-[8px] shadow-lg hover:bg-[#6BE3A2] transition whitespace-nowrap cursor-pointer">
+            <button className="w-full bg-[#6BE3A2] px-4 lg:px-6 py-2 text-sm rounded-[8px] shadow-lg hover:bg-[#6BE3A2] transition whitespace-nowrap cursor-pointer">
               Sign In
             </button>
 

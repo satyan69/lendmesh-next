@@ -43,7 +43,7 @@ export default function Footer() {
               eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
             </p> */}
-            <div className="text-white p-4 flex flex-col items-center sm:items-start space-y-3 w-full max-w-sm">
+            <div className="text-white p-4 flex flex-col items-center sm:items-start space-y-3 w-full">
               <p className="text-lg font-semibold text-center sm:text-left">
               Subscribe for daily updates
               </p>
@@ -62,7 +62,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex items-center justify-start space-x-8">
+            <div className="flex pl-4 items-center justify-start space-x-8">
               <div className="flex items-center">
                 <a
                   href="https://www.facebook.com/people/LendMesh/100077588715363/#"
