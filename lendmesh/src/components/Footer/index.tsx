@@ -28,14 +28,14 @@ export default function Footer() {
 
           <a
             href="#"
-            className="bg-[#6BE3A2] hover:bg-bg-[#6BE3A2 text-black font-semibold py-3 px-8 rounded-[8px] shadow-lg transition"
+            className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:text-[#002144] hover:border-[#6BE3A2] transition"
           >
             Join now
           </a>
         </div>
       </div>
-      <footer className="bg-blue-500 text-white py-12 px-6 footer">
-        <div className="container mx-auto grid md:grid-cols-2 gap-12">
+      <footer className="bg-[#4296EA] text-white py-12 footer">
+        <div className="container mx-auto grid md:grid-cols-2 gap-12 px-6">
           {/* <!-- Left Section: Text Block --> */}
           <div className="space-y-4">
             {/* <p className="text-lg">
@@ -55,10 +55,11 @@ export default function Footer() {
                 />
                 <button
                   type="button"
-                  className="bg-white text-[#4296EA] px-5 py-2 rounded-[8px] font-semibold hover:bg-gray-100 mt-2 sm:mt-0 w-full sm:w-auto cursor-pointer transition duration-300 ease-in-out"
+                  className="bg-white text-[#4296EA] px-5 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:text-[#002144] mt-2 sm:mt-0 w-full sm:w-auto cursor-pointer transition duration-300 ease-in-out"
                 >
                   Subscribe
                 </button>
+                
               </div>
             </div>
 

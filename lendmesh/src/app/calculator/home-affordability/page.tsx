@@ -22,7 +22,7 @@ export default function HomeAffordabilityCalculator() {
           </p>
         </section>
       </div>
-      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col py-16 px-5">
+      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col py-16 px-8">
         <HomeData />
       </section>
     </>

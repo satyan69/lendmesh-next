@@ -194,13 +194,38 @@ export default function BlogPage() {
                 </a>
               </div>
             </div>
+
+             {/* <!-- Blog 4 --> */}
+             <div className="bg-[#FAFAFA] rounded-[2px] hover:shadow-lg transition border border-gray-200 p-5">
+              <Image
+                className="w-full object-cover"
+                src={'/images/blog/blog_3.png'}
+                alt="Credit Card Loan"
+                priority
+                width={100}
+                height={200}
+              />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold">
+                  Lorem ipsum dolor sit amet, elit
+                </h3>
+                <p className="mt-2">
+                  Lorem ipsum dolor sit amet, elit do eiusmod tempor
+                </p>
+                <a
+                  href="#"
+                  className="text-[#6BE3A2] mt-4 inline-flex items-center hover:text-[#6BE3A2]"
+                >
+                  Read more{" "}
+                  <span className="ml-1 transition-transform hover:translate-x-2">
+                    →
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="flex justify-center mt-10">
-            <button className="bg-[#6BE3A2] text-[#002144] px-6 py-3 rounded-[8px] shadow hover:bg-bg-[#6BE3A2] transition cursor-pointer">
-              More Blogs
-            </button>
-          </div>
+        {/* Blog Details */}
         </section>
       </div>
     </>

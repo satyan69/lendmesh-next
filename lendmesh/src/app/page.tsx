@@ -31,7 +31,7 @@ export default function Home() {
                   helping you compare the best loan offers from top credit
                   unions and lenders across the USA
                 </p>
-                <button className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[4px] font-semibold hover:bg-white hover:text-blue-900 transition">
+                <button className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:text-[#002144] hover:border-[#6BE3A2] transition">
                   Get started
                 </button>
               </div>
@@ -159,7 +159,7 @@ export default function Home() {
               <h2 className="text-2xl font-bold mb-8">Home Affordability</h2>
               <Link
                 href="/calculator/home-affordability"
-                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
+                className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:border-[#6BE3A2] transition cursor-pointer"
               >
                 Calculate
               </Link>
@@ -171,7 +171,7 @@ export default function Home() {
 
               <Link
                 href="/calculator/mortgage-calculator"
-                className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[8px] font-semibold hover:bg-white hover:text-blue-900 transition"
+                className="cursor-pointer text-white border-2 border-white px-6 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:text-[#002144] hover:border-[#6BE3A2] transition"
               >
                 Calculate
               </Link>
@@ -217,7 +217,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut.
               </p>
-              <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer">
+              <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:border-[#6BE3A2] transition cursor-pointer">
                 More info
               </button>
             </div>

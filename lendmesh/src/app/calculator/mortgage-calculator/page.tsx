@@ -16,7 +16,7 @@ export default function MortgageCalculator() {
           </p>
         </section>
       </div>
-      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col py-16 px-5">
+      <section className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full flex flex-col py-16 px-8">
         <div className="min-h-screen bg-[#F9FAFB]">
           <div className="grid grid-cols-1 gap-6">
             {/* <!-- Left Sidebar Inputs --> */}

@@ -95,7 +95,7 @@ export default function HomeBlogs() {
       </div>
 
       <div className="flex justify-center mt-10">
-        <button className="bg-[#6BE3A2] text-[#002144] px-6 py-3 rounded-[8px] shadow hover:bg-[#6BE3A2] transition cursor-pointer">
+        <button className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] font-semibold hover:bg-[#6BE3A2] hover:border-[#6BE3A2] transition cursor-pointer">
           More Blogs
         </button>
       </div>

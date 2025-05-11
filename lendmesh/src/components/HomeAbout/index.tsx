@@ -35,7 +35,7 @@ export default function HomeAbout() {
         <div className="mt-10">
           <button
             typeof="button"
-            className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#002144] hover:text-white transition cursor-pointer"
+            className="border-2 border-[#002144] text-[#002144] px-6 py-2 rounded-[8px] hover:bg-[#6BE3A2] hover:border-[#6BE3A2] hover:text-white transition cursor-pointer"
           >
             Know more
           </button>
