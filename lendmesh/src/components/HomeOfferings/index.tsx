@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 export default function HomeOfferings() {
-    return (<div className="home-banner-part-2 py-16 px-6">
+    return (<div className="py-16 px-6">
         <div className="lg:container md:mx-auto md:mx-0 w-full h-full md:max-w-full">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-30 mb-12">
             Our Offerings
@@ -13,7 +13,7 @@ export default function HomeOfferings() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
             {/* <!-- Personal Loan --> */}
-            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg cursor-pointer transition">
               <Link scroll={false} href="/loans/personal_loans">
               <Image
                 className="dark:invert"
@@ -33,7 +33,7 @@ export default function HomeOfferings() {
             </div>
 
             {/* <!-- Vehicle Loan --> */}
-            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg cursor-pointer transition">
             <Link scroll={false} href="/loans/vehicle_loans">
               <Image
                 className="dark:invert"
@@ -52,7 +52,7 @@ export default function HomeOfferings() {
             </div>
 
             {/* <!-- Student Loan --> */}
-            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg cursor-pointer transition">
             <Link scroll={false} href="/loans/student_loans">
               <Image
                 className="dark:invert"
@@ -71,7 +71,7 @@ export default function HomeOfferings() {
             </div>
 
             {/* <!-- Mortgage Loan --> */}
-            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg cursor-pointer transition">
             <Link scroll={false} href="/loans/mortgage_loans">
               <Image
                 className="dark:invert"
@@ -90,7 +90,7 @@ export default function HomeOfferings() {
             </div>
 
             {/* <!-- Home Equity Loan --> */}
-            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-105 transition">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg cursor-pointer transition">
             <Link scroll={false} href="/loans/home_equity_loans">
               <Image
                 className="dark:invert"
@@ -109,7 +109,7 @@ export default function HomeOfferings() {
             </div>
 
             {/* <!-- Credit Card Loan --> */}
-            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:shadow-md hover:scale-103 transition">
+            <div className="flex flex-col items-center text-center p-8 rounded-lg hover:scale-103 transition">
               <Image
                 className="dark:invert"
                 src={'/images/offerings/credit_card_loan.svg'}

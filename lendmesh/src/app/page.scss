@@ -8,25 +8,31 @@
 *
 */
 .home-banner {
+  background: conic-gradient(
+    from 90deg at left top,
+    #002144 0deg,
+    #2f6e8d 90deg,
+    #001f42 180deg,
+    #063052 270deg,
+    #002144 360deg
+  );
   // background-image: url("./images/home/Banner_lendmesh_1920.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  @media screen and (max-width: 1280px) {
+  @media (max-width: 1280px) {
     // background-image: url("./images/home/banner-lendmesh-2.png");
     background-size: cover;
   }
   @media (max-width: 768px) {
     // background-image: url("./images/home/banner-lendmesh-2.png");
   }
-  @media screen and (max-width: 600px) {
-    // height: 35vh;
-    // min-height: 300px;
+  @media (max-width: 600px) {
+    background-image: url("/images/home/banner/mobile_banner.png");
   }
 }
 
 .home-banner-part-1 {
-  background-image: url("/images/home/banner/1920/top.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -34,33 +40,23 @@
     padding-top: 20vh;
   }
   @media screen and (max-width: 1280px) {
-    background-image: url("/images/home/banner/1240/top.png");
     background-size: auto;
     h2 {
       padding-top: 100px;
     }
   }
   @media (max-width: 768px) {
-    background-image: url("/images/home/banner/768/top.png");
     background-size: auto;
     h2 {
       padding-top: 275px;
     }
   }
   @media screen and (max-width: 340px) {
-    background-image: url("/images/home/banner/375/top.png");
     background-size: auto;
     h2 {
       padding-top: 275px;
     }
   }
-}
-
-.home-banner-part-2 {
-  background-image: url("/images/home/banner/1920/bottom.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
 }
 
 /*

@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         {/* <!-- Heading --> */}
         <HomeOfferings />
-        <div className="home-banner-part-3 py-16 px-6"></div>
+        {/* <div className="home-banner-part-3 py-16 px-6"></div> */}
       </div>
 
       {/*
